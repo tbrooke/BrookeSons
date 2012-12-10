@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<feed xml:lang='en-US' xmlns='http://www.w3.org/2005/Atom'>
+  <id>http://localhost:4242/</id>
+  <title>http://localhost:4242</title>
+</feed>
