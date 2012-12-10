@@ -1,7 +1,7 @@
 /* line 4, ../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
 html {
-  margin: 0;
-  padding: 0;
+  margin: 10px;
+  padding: 10px;
   border: 0;
 }
 
