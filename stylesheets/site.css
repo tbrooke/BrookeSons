@@ -1,0 +1,28 @@
+#header {
+  margin-bottom: 1em;
+}
+
+#footer {
+  margin-top: 1em;
+}
+
+body {
+  margin: 5em;
+}
+
+#content {
+  margin-right: 1em;
+}
+
+.post_navigation {
+  margin-bottom: 1em;
+}
+.post_navigation .previous_post {
+  float: left;
+}
+.post_navigation .next_post {
+  float: right;
+}
+.post_navigation .clearfix {
+  clear: both;
+}
