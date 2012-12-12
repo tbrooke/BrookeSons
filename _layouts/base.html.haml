@@ -8,6 +8,28 @@
     %link{ :rel=>'stylesheet', :type=>'text/css', :href=>'/stylesheets/site.css', :media=>'screen' }
     /[if lt IE 8]
       %link{ :rel=>'stylesheet', :type=>'text/css', :href=>'/stylesheets/ie.css', :media=>'screen, projection' }
-  %body.bp
-    #container
-      ~ content
+  %body.two-col
+    #content_container
+      #header
+        %a{:href=>site.base_url}
+          Brookesonsweb.com
+      #content_container
+        #content
+          ~ content
+      #sidebar_container
+        #sidebar
+          %h2 Navigation
+          %ul
+            %li.post-tags
+              %a{:href=>'/blog/tags/'}
+                Tag cloud
+          %h2 Contact
+          %ul
+            %li
+              %a{:href=>'http://twitter.com/tmb52'}
+                @tmb52 on Twitter
+      #footer
+        Copyright 2012 Brooke and Sons Web Builders.
+
+      = google_analytics
+

@@ -1,0 +1,112 @@
+/* 960 Grid System ~ Text CSS.
+ * Learn more ~ http://960.gs/
+ * *
+ * Licensed under GPL and MIT. */
+
+@import "blueprint";
+
+
+body {
+  font-family: 'Trebuchet MS',Verdana,sans-serif;
+}
+
+#header {
+  margin-top: 1ex;
+  font-size: 240%;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+  font-family: courier;
+}
+
+#footer {
+  color: #999;
+  border-top: 1px solid black;
+  padding-top: .5ex;
+  font-size: 80%;
+}
+
+a {
+  text-decoration: none;
+  color: #922;
+}
+
+
+pre {
+  font-family: courier;
+}
+
+.tag-cloud {
+  text-align: justify;
+ 
+}
+.tag-0 {
+  font-size: 100%;
+}
+.tag-1 {
+  font-size: 140%;
+}
+.tag-2 {
+  font-size: 180%;
+}
+.tag-3 {
+  font-size: 220%;
+}
+.tag-4 {
+  font-size: 260%;
+}
+.tag-5 {
+  font-size: 300%;
+}
+
+.post {
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+  border-bottom: 1px solid #888;
+  h2 {
+    font-size: 170%;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+  }
+  h3 {
+    font-size: 120%;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+  }
+  h4 {
+    font-size: 90%;
+    font-weight: bold;
+  }
+  .content {
+    font-size: 110%;
+    p {
+      margin-bottom: 1.2em;
+      line-height: 1.7em;
+    }
+  }
+}
+
+.pagination-links {
+  font-size: 90%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  .page-link, a, .current-page, span {
+    padding: .6ex;
+  }
+  .page-link, a, .current-page {
+    border: 1px solid #888;
+  }
+  .current-page {
+    border: 1px solid #555;
+    background-color: #ddd;
+    font-weight: bold;
+  }
+  .previous-link, .next-link {
+    font-weight: bold;
+  }
+}
+
+em {
+  font-weight: bold;
+}

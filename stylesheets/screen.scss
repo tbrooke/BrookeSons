@@ -14,6 +14,8 @@
 // configuration applied, uncomment:
 // @include blueprint
 
+@import url(http://fonts.googleapis.com/css?family=Marvel:400,700);
+
 // If you are doing a lot of stylesheet concatenation, it is suggested
 // that you scope your blueprint styles, so that you can better control
 // what pages use blueprint when stylesheets are concatenated together.
@@ -25,7 +27,8 @@ body.bp {
   // Remove the scaffolding when you're ready to start doing visual design.
   // Or leave it in if you're happy with how blueprint looks out-of-the-box
 }
-
+$default_font_family: "DejaVu Sans", Verdana, sans-serif;
+$header_font_family: "Marvel", "Trebuchet MS", Arial, sans-serif;
 form.bp {
   @include blueprint-form;
   // You'll probably want to remove the scaffolding once you start styling your site.
