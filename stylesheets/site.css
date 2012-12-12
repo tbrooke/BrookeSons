@@ -1,17 +1,29 @@
 #header {
-  margin-bottom: 1em;
+  margin: 2em;
+}
+#header h1 {
+  font-size: 2em;
 }
 
 #footer {
   margin-top: 1em;
 }
 
-body {
-  margin: 5em;
+#sidebar {
+  margin-top: 3em;
+}
+#sidebar h2 {
+  font-size: 1.25em;
 }
 
 #content {
-  margin-right: 1em;
+  margin: 3em;
+}
+#content h1 {
+  font-size: 2em;
+}
+#content a:link {
+  text-decoration: none;
 }
 
 .post_navigation {
@@ -22,6 +34,7 @@ body {
 }
 .post_navigation .next_post {
   float: right;
+  margin-right: 2em;
 }
 .post_navigation .clearfix {
   clear: both;
