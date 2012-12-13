@@ -5,6 +5,7 @@ disqus: brookeandsons
 disqus_generate_id: true 
 
 profiles: 
+  development:
   production: 
     base_url: http://brookesons.github.com/brookesons
     deploy: 
