@@ -2,13 +2,13 @@
 <feed xml:lang='en-US' xmlns='http://www.w3.org/2005/Atom'>
   <id>http://brookesons.github.com/brookesons/</id>
   <title>http://brookesons.github.com/brookesons</title>
-  <updated>2012-12-12T18:32:51-05:00</updated>
+  <updated>2012-12-12T22:06:36-05:00</updated>
   <link href='http://brookesons.github.com/brookesons/blog.atom' rel='self' type='application/atom+xml' />
   <link href='http://brookesons.github.com/brookesons/' rel='alternate' type='text/html' />
   <entry>
     <id>http://brookesons.github.com/brookesons/blog/2012/12/11/Monday-Morning.html</id>
     <title>Monday Morning Blues</title>
-    <updated>2012-12-12T18:32:51-05:00</updated>
+    <updated>2012-12-12T22:06:36-05:00</updated>
     <published>2012-12-11T00:00:00Z</published>
     <link href='http://brookesons.github.com/brookesons/blog/2012/12/11/Monday-Morning.html' rel='alternate' type='text/html' />
     <summary>
@@ -22,7 +22,7 @@
   <entry>
     <id>http://brookesons.github.com/brookesons/blog/2012/12/08/happy-birthday.html</id>
     <title>Reboot</title>
-    <updated>2012-12-12T18:32:51-05:00</updated>
+    <updated>2012-12-12T22:06:36-05:00</updated>
     <published>2012-12-08T00:00:00Z</published>
     <link href='http://brookesons.github.com/brookesons/blog/2012/12/08/happy-birthday.html' rel='alternate' type='text/html' />
     <summary>
@@ -31,6 +31,135 @@
     </summary>
     <content type='html'>
       &lt;p&gt;I got tired of Typo misbehaving, so decided to give WordPress a whirl.&lt;/p&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>http://brookesons.github.com/brookesons/blog/2012/12/05/clojure-day.html</id>
+    <title>Clojure Day Report</title>
+    <updated>2012-12-12T22:23:48-05:00</updated>
+    <published>2012-12-05T00:00:00Z</published>
+    <link href='http://brookesons.github.com/brookesons/blog/2012/12/05/clojure-day.html' rel='alternate' type='text/html' />
+    <summary>
+      In Practicing  Ruby issue 5.8  Gregory described his experiences in studying swarming behavior and how they lead to the discovery of a Rich Hickey project simulating an ant colony written in Clojure. Gregory decided to look into the Clojure code then Clojure itself and the Mendicant University Clojure Day was born. Several respondents expressed an interest in learning more about Clojure and it was decided that an email format would be best, with everyone researching on their own then reporting back to the group on November 29 [Clojure Day].
+
+
+
+
+Gregory kicked things off around midnight on the 18th and...
+    </summary>
+    <content type='html'>
+      &lt;p&gt;In Practicing  &lt;a href=&quot;https://practicingruby.com/articles/92&quot;&gt;Ruby issue 5.8&lt;/a&gt;  Gregory described his experiences in studying swarming behavior and how they lead to the discovery of a Rich Hickey &lt;a href=&quot;https://gist.github.com/1093917&quot;&gt;project&lt;/a&gt; simulating an ant colony written in Clojure. Gregory decided to look into the Clojure code then Clojure itself and the Mendicant University Clojure Day was born. Several respondents expressed an interest in learning more about Clojure and it was decided that an email format would be best, with everyone researching on their own then reporting back to the group on November 29 [Clojure Day].&lt;/p&gt;
+
+&lt;br /&gt;
+
+
+&lt;p&gt;Gregory kicked things off around midnight on the 18th and a number of participants started in with their posts.  Several folks were doing some reading; Morgan Nelson started Marick's &lt;a href=&quot;https://leanpub.com/fp-oo&quot;&gt;Functional Programming for the Object Oriented Programmer&lt;/a&gt;, a few others started reading &lt;a href=&quot;http://pragprog.com/book/shcloj2/programming-clojure&quot;&gt;Programming Clojure&lt;/a&gt;. Also there was the usual tool discussion with some trying to tackle Emacs along with Clojure and others sticking with Vim or whatever.&lt;/p&gt;
+
+&lt;br /&gt;
+
+
+&lt;p&gt;Gregory went back to Puzzle Node #4 &lt;a href=&quot;http://puzzlenode.com/puzzles/4-robots-vs-lasers&quot;&gt;Robots v Lasers&lt;/a&gt; and tried to port a solution from Ruby to Clojure:&lt;/p&gt;
+
+&lt;br /&gt;
+
+
+&lt;p&gt;So far, I've translated my parser class. Here's what I came up with:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;#x000A;&lt;br /&gt;&amp;#x000A;------------------------------------------------------&amp;#x000A;&amp;#x000A;(def conveyor-symbols { \# :wall \| :laser })&amp;#x000A;(def robot-symbol &quot;X&quot;)&amp;#x000A;&amp;#x000A;(defn wall-data [text] (map #(conveyor-symbols %) text))&amp;#x000A;&amp;#x000A;(defn conveyor-data [input]&amp;#x000A;  (let [[north middle south] (clojure.string/split input #&quot;\n&quot;)]&amp;#x000A;    { :north_side     (wall-data north)&amp;#x000A;      :south_side     (wall-data south)&amp;#x000A;      :robot_position (.indexOf middle robot-symbol)}))&amp;#x000A;&amp;#x000A;(pr (conveyor-data &quot;#|#|#|##\n---X----\n###||###&quot;))&amp;#x000A;&amp;#x000A;------------------------------------------------------&amp;#x000A;&amp;#x000A;The original Ruby code looked like this:&amp;#x000A;&amp;#x000A;------------------------------------------------------&amp;#x000A;&amp;#x000A;module Robotic&amp;#x000A;  class Parser&amp;#x000A;    CONVEYOR_SYMBOLS = { &quot;#&quot; =&gt; :wall, &quot;|&quot; =&gt; :laser }&amp;#x000A;    ROBOT_SYMBOL = &quot;X&quot;&amp;#x000A;&amp;#x000A;    def initialize(text)&amp;#x000A;      @text = text&amp;#x000A;    end&amp;#x000A;&amp;#x000A;    def conveyor_data&amp;#x000A;      north, middle, south = text.split&amp;#x000A;      { :north_side =&gt; wall_data(north),&amp;#x000A;        :south_side =&gt; wall_data(south),&amp;#x000A;        :robot_position =&gt; middle.index(ROBOT_SYMBOL) }&amp;#x000A;    end&amp;#x000A;&amp;#x000A;    private&amp;#x000A;&amp;#x000A;    attr_reader :text&amp;#x000A;&amp;#x000A;    def wall_data(wall_text)&amp;#x000A;      wall_text.chars.map { |e| CONVEYOR_SYMBOLS[e] }&amp;#x000A;    end&amp;#x000A;  end&amp;#x000A;end&amp;#x000A;&amp;#x000A;------------------------------------------------------&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;br /&gt;
+
+
+&lt;p&gt;He had not completed it but he stated how impressed he was that it was fairly easy&lt;/p&gt;
+
+&lt;br /&gt;
+
+
+&lt;p&gt;Shane Emmons revisited a Noir project  &lt;a href=&quot;https://github.com/semmons99/emmons.io&quot;&gt;emmons.io&lt;/a&gt; he had started a couple of years ago and pointed out some views where he had done some work with &lt;a href=&quot;https://github.com/weavejester/hiccup&quot;&gt;Hiccup&lt;/a&gt;, a Clojure based templating language:&lt;/p&gt;
+
+&lt;br /&gt;
+
+
+&lt;p&gt;Shane along with some others looked at &lt;a href=&quot;http://www.4clojure.com/&quot;&gt;4clojure&lt;/a&gt; a Clojure problem site sort of like Puzzlenode or Ruby Koans.&lt;/p&gt;
+
+&lt;br /&gt;
+
+
+&lt;p&gt;Carol Nichols mentioned a talk by Stuart Holloway on the &lt;a href=&quot;http://www.infoq.com/presentations/Impedance-Mismatch&quot;&gt;impedence mismatch&lt;/a&gt; between objects and relational databases lead to a discussion about &lt;a href=&quot;http://www.datomic.com/&quot;&gt;Datomic&lt;/a&gt; but no one had much experience with it. Finally there was a general discussion about functional v object oriented programming.  We ended with a video of live programming using Clojure, Emacs and Supercollider in &lt;a href=&quot;http://vimeo.com/22798433&quot;&gt;Overtone&lt;/a&gt;&lt;/p&gt;
+
+&lt;br /&gt;
+
+
+&lt;p&gt;It was an interesting experience. It sounds like most of the participants intend to explore Clojure further but not formal plans were made.&lt;br /&gt;&lt;/p&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>http://brookesons.github.com/brookesons/blog/2012/11/07/main-street-on-rails.html</id>
+    <title>Main Street Mission on Rails</title>
+    <updated>2012-12-12T22:45:39-05:00</updated>
+    <published>2012-11-07T00:00:00Z</published>
+    <link href='http://brookesons.github.com/brookesons/blog/2012/11/07/main-street-on-rails.html' rel='alternate' type='text/html' />
+    <summary>
+      The inspiration for me was Jordan Byron's
+      Mission of Mercy project. I associated Rails with Web
+      apps and after firing up Mission of Mercy it opened my eyes to the fact
+      that Rails makes a great platform for an app that may or may not live on
+      the external web. Also I liked the way Jordan approached Rails as a tool to
+      do some social and humanitarian good rather than just a tool to launch a
+      startup and make a  million dollars. I am learning Rails and my Law firm
+      now runs on Clio which is a Rails app so I knew that Rails could be...
+    </summary>
+    <content type='html'>
+      &lt;p&gt;The inspiration for me was &lt;a href=&quot;http://jordanbyron.com&quot;&gt;Jordan Byron's&lt;/a&gt;
+&lt;a href=&quot;https://github.com/mission-of-mercy/mission-of-mercy#readme&quot;&gt;Mission of Mercy&lt;/a&gt; project. I associated Rails with Web
+apps and after firing up Mission of Mercy it opened my eyes to the fact
+that Rails makes a great platform for an app that may or may not live on
+the external web. Also I liked the way Jordan approached Rails as a tool to
+do some social and humanitarian good rather than just a tool to launch a
+startup and make a  million dollars. I am learning Rails and my Law firm
+now runs on Clio which is a Rails app so I knew that Rails could be a good
+fit for a business platform&lt;/p&gt;
+
+&lt;p&gt;I had looked at database platforms like Access, at off the shelf software
+and even played with Salesforce some since they offer it free to nonprofits
+and nothing seemed to be a good fit. After seeing Mission of Mercy I wrote
+Jordan and told him that I was impressed with it and thought that something
+similar would be a good fit for Main Street Mission, he agreed, told me he
+was associated with &lt;a href=&quot;http://mendicantuniversity.org&quot;&gt;Mendicant University&lt;/a&gt;, we got Corey on Board and here
+we are. The scales were an early thing with the joke about Rails on scales and
+one of the reasons that Jordan selected Corey was his skill with scales.&lt;/p&gt;
+
+&lt;p&gt;As it has developed I am very happy with the decision. Especially after two
+Railsconf's I believe that one of the biggest advantages of Ruby and Rails
+is the active and open community and the fact that both Ruby and Rails are
+open source. This is a perfect fit for &lt;a href=&quot;http://msm2.webvanta.com/&quot;&gt;Main Street Mission&lt;/a&gt; whose whole
+purpose is to be an open and caring community. There may be other languages
+and platforms that may be a better fit technically but there are no other
+languages with the huge community that is willing to jump in and help each
+other. It is the perfect way to carry the ethos of Main Street Mission out
+of China Grove and I think it is a good to way bring some of the ethos of
+the Rails community into China Grove and Main Street Mission&lt;/p&gt;
+
+&lt;p&gt;Rails also gives us some security because even if Mendicant University
+disappears any Ruby developer with a github account can pick up
+on our code and run with it. There are active Ruby communities in both
+Charlotte and Raleigh so we can get local help if we need it. Also
+hopefully the code will grow beyond us and other pantries can adopt it,
+modify it and help each other&lt;/p&gt;
+
+&lt;p&gt;Finally from a technical perspective Rails has the speed and more than
+enough sophistication to handle the project. It's user interface uses the
+tools of the web so we have everything from html to handlebars for us to
+work with.  We have ten of thousands of gems to help us. We have a platform
+that embraces agile and behavior driven development which makes it perfect
+for our non technical folks to keep up with the techies&lt;/p&gt;
+
+&lt;p&gt;So where else other than Rails could we get Anne, Robin and Tom squared
+here in China Grove working with Corey in Pennsylvania, Jordan in Connecticut,
+Shane in Seattle and others yet to come working together on a project like
+this to help make it easier for a few folks in China Grove down on their
+luck to get something to eat.&lt;/p&gt;
     </content>
   </entry>
 </feed>

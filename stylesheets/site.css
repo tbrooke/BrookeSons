@@ -1,28 +1,44 @@
 #header {
   margin: 2em;
+  border-bottom: solid;
 }
 #header h1 {
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 #footer {
   margin-top: 1em;
+  padding-left: 3em;
 }
 
-#sidebar {
+body.two-col #sidebar {
   margin-top: 3em;
+  margin-left: 3em;
 }
-#sidebar h2 {
+body.two-col #sidebar h2 {
   font-size: 1.25em;
+  line-height: 2.00em;
 }
-
-#content {
+body.two-col #sidebar a:link {
+  text-decoration: none;
+}
+body.two-col .post {
+  margin-bottom: 2.0em;
+}
+body.two-col .post h2 {
+  font-size: 2.0em;
+}
+body.two-col #content {
   margin: 3em;
 }
-#content h1 {
+body.two-col #content h1 {
   font-size: 2em;
 }
-#content a:link {
+body.two-col #content P {
+  font-size: 1.40em;
+  line-height: 1.25em;
+}
+body.two-col #content a:link {
   text-decoration: none;
 }
 
