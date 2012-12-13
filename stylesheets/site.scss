@@ -1,31 +1,53 @@
 @import "blueprint";
 
+
+
+
 #header {
   margin: 2em;
   h1 {
-      font-size: 2em;
+      font-size: 2.5em;
    } 
+   border-bottom: solid;
+
 }
 
 #footer {
   margin-top: 1em;
+  padding-left:  3em;
 }
-
-#sidebar {
+body.two-col {
+  #sidebar {
       margin-top: 3em;
-    h2 {
-      font-size: 1.25em;}
-}
-
-#content {
-    h1 {
-      font-size: 2em;
+      margin-left:  3em;
+      h2 {
+        font-size: 1.25em;
+        line-height: 2.00em;}
+      a:link {
+      text-decoration:  none;
     }
-  margin: 3em;
+  }
+
+  .post {
+    h2 {
+    font-size:  2.0em;
+    }
+  }
+  #content {
+      h1 {
+        font-size: 2em;
+      }
+      P {
+      font-size: 1.40em;
+      line-height: 1.25em;
+      }
+    margin: 3em;
     a:link  {
     text-decoration:  none;
     }
+  }
 }
+
 
 // .post {
 //   h2 {

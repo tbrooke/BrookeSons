@@ -25,7 +25,8 @@ layout: base
       - unless tag.nil?
         %a{:href=>tag.primary_page.url}
           = tag
+    %hr
   .content
     ~page.content
-  / .comments
-  /   = page.intense_debate_comments
+    .comments
+    = page.disqus_comments 
