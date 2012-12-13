@@ -5,7 +5,6 @@ layout: blog
 tags:  [ Ruby Rails mendicant ]
 ---
 
-
 The inspiration for me was [Jordan Byron's][jb]
 [Mission of Mercy][mom] project. I associated Rails with Web
 apps and after firing up Mission of Mercy it opened my eyes to the fact
