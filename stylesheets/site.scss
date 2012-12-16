@@ -2,7 +2,6 @@
 
 
 
-
 #header {
   margin: 2em;
   h1 {
@@ -14,12 +13,18 @@
 
 #footer {
   margin-top: 1em;
-  padding-left:  3em;
+  padding-left:  2em;
 }
 body.two-col {
+  margin-left: 5.1em;
   #sidebar {
-      margin-top: 3em;
+      margin-top: 1em;
+      padding-top: 2em;
+      padding-left: 2em;
+      padding-bottom: 2em;
+
       margin-left:  3em;
+      background-color:  #f5f5f5;
       h2 {
         font-size: 1.25em;
         line-height: 2.00em;}
@@ -42,7 +47,8 @@ body.two-col {
       font-size: 1.40em;
       line-height: 1.25em;
       }
-    margin: 3em;
+    margin-top: 2em;
+    margin-left: 2em;
     a:link  {
     text-decoration:  none;
     }

@@ -2,10 +2,12 @@
 title: "Main Street Mission on Rails"
 author: 'Tom Brooke'
 layout: blog
-tags:  [ Ruby Rails mendicant ]
+tags:  [ Rails ]
 ---
 
-The inspiration for me was [Jordan Byron's][jb]
+<img width="386" height="325" alt="Main Street Mission" id="image18" src="/blog/assets/MainStreet-logo.jpg"/>
+
+I am a director at Main Street Mission in China Grove, North Carolina. In one of our planning sessions we decided that we needed to "computerize" our records. I am the "computer guy" so I started to see what we was available. I have worked with Rails some but I wasn't sure it would work in our situation. The inspiration that changed my mind was [Jordan Byron's][jb]
 [Mission of Mercy][mom] project. I associated Rails with Web
 apps and after firing up Mission of Mercy it opened my eyes to the fact
 that Rails makes a great platform for an app that may or may not live on

@@ -2,12 +2,12 @@
 google_analytics: UA-37021710-1
 
 disqus: brookeandsons
-disqus_generate_id: true 
+disqus_generate_id: true
 
-profiles: 
+profiles:
   development:
-  production: 
+  production:
     base_url: http://brookesons.github.com/brookesons
-    deploy: 
+    deploy:
       host: github_pages
       branch: gh-pages
