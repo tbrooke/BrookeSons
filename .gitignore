@@ -1,6 +1,7 @@
 brookesons.sublime-project
 brookesons.sublime-workspace
 .awestruct/
+/.awestruct
 .sass-cache/
 /.sass-cache
 _site/
