@@ -1,17 +1,12 @@
+@import url(http://fonts.googleapis.com/css?family=Marvel:400,700);
 /* 960 Grid System ~ Text CSS.
  * Learn more ~ http://960.gs/
  * *
  * Licensed under GPL and MIT. */
-body {
-  font-family: 'Trebuchet MS',Verdana,sans-serif;
-}
-
 #header {
   margin-top: 1ex;
-  font-size: 240%;
-  font-weight: bold;
   border-bottom: 1px solid black;
-  font-family: courier;
+  font-family: "Marvel", "Trebuchet MS", Arial, sans-serif;
 }
 
 #footer {
@@ -27,7 +22,7 @@ a {
 }
 
 pre {
-  font-family: courier;
+  font-family: "DejaVu Sans", Verdana, sans-serif;
 }
 
 .tag-cloud {
