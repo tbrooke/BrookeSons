@@ -8,12 +8,19 @@
 
 #footer {
   margin-top: 1em;
-  padding-left: 3em;
+  padding-left: 2em;
 }
 
+body.two-col {
+  margin-left: 5.1em;
+}
 body.two-col #sidebar {
-  margin-top: 3em;
+  margin-top: 1em;
+  padding-top: 2em;
+  padding-left: 2em;
+  padding-bottom: 2em;
   margin-left: 3em;
+  background-color: #f5f5f5;
 }
 body.two-col #sidebar h2 {
   font-size: 1.25em;
@@ -29,7 +36,8 @@ body.two-col .post h2 {
   font-size: 2.0em;
 }
 body.two-col #content {
-  margin: 3em;
+  margin-top: 2em;
+  margin-left: 2em;
 }
 body.two-col #content h1 {
   font-size: 2em;
