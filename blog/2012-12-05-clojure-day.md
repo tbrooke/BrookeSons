@@ -5,6 +5,9 @@ layout: blog
 tags:  [ clojure ]
 ---
 
+Gregoery Brown is well know in the Ruby Community and Mendicant University has spawned many Ruby developers. Recently he decided to step outof Ruby and take a look at Clojure. The result was Clojure Day and a summary follows:
+
+
 In Practicing  [Ruby issue 5.8](https://practicingruby.com/articles/92)  Gregory described his experiences in studying swarming behavior and how they lead to the discovery of a Rich Hickey [project](https://gist.github.com/1093917) simulating an ant colony written in Clojure. Gregory decided to look into the Clojure code then Clojure itself and the Mendicant University Clojure Day was born. Several respondents expressed an interest in learning more about Clojure and it was decided that an email format would be best, with everyone researching on their own then reporting back to the group on November 29 \[Clojure Day\].
 <br />
 
