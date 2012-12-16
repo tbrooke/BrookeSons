@@ -1,5 +1,5 @@
 profiles: 
   production: 
-    base_url: http://brookesons.github.com/brookesons
+    base_url: http://brookesonsweb.com
     deploy: 
       host: github_pages 
