@@ -4,18 +4,21 @@
  * Licensed under GPL and MIT. */
 
 @import "blueprint";
+@import url(http://fonts.googleapis.com/css?family=Marvel:400,700);
 
+$default_font_family: "DejaVu Sans", Verdana, sans-serif;
+$header_font_family: "Marvel", "Trebuchet MS", Arial, sans-serif;
+
+form.bp {
+    }
 
 body {
-  font-family: 'Trebuchet MS',Verdana,sans-serif;
-}
+  }
 
 #header {
   margin-top: 1ex;
-  font-size: 240%;
-  font-weight: bold;
   border-bottom: 1px solid black;
-  font-family: courier;
+  font-family: $header_font_family;
 }
 
 #footer {
@@ -32,7 +35,7 @@ a {
 
 
 pre {
-  font-family: courier;
+  font-family: $default_font_family;
 }
 
 .tag-cloud {

@@ -5,6 +5,7 @@
       Brooke and Sons
     %link{ :rel=>'stylesheet', :type=>'text/css', :href=>'/stylesheets/screen.css', :media=>'screen, projection' }
     %link{ :rel=>'stylesheet', :type=>'text/css', :href=>'/stylesheets/print.css', :media=>'print' }
+    %link{ :rel=>'stylesheet', :type=>'text/css', :href=>'/stylesheets/text.css', :media=>'screen, print' }
     %link{ :rel=>'stylesheet', :type=>'text/css', :href=>'/stylesheets/site.css', :media=>'screen' }
     /[if lt IE 8]
       %link{ :rel=>'stylesheet', :type=>'text/css', :href=>'/stylesheets/ie.css', :media=>'screen, projection' }
@@ -12,23 +13,22 @@
     #content_container
       #header
         %h1 Brooke and Sons Web Builders
-      / #content_container
       #content
         ~ content
       #sidebar_container
         #sidebar
           %h2 Navigation
           %ul
-            %li.post-tags
-              %a{:href=>'/blog/tags/'}
-                Tag cloud
-          %h2 Contact
-          %ul
+          %li.post-tags
+            %a{:href=>'/blog/tags/'}
+              Tag cloud
+            %h2 Contact
+            %ul
             %li
               %a{:href=>'http://twitter.com/tmb52'}
                 @tmb52 on Twitter
-          %h2 Projects
-          %ul
+            %h2 Projects
+            %ul
             %li
               %a{:href=>'http://twinmaps.com'}
                 Twinmaps
