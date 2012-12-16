@@ -1,7 +1,0 @@
----
-title: "Reboot"
-author: 'Tom Brooke'
-layout: blog
-tags: [ misc ]
----
-I got tired of Typo misbehaving, so decided to give WordPress a whirl.
