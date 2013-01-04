@@ -37,7 +37,17 @@ body.two-col {
     h2 {
     font-size:  1.5em;
     }
+    margin-top: .5em;
     margin-bottom:  2.0em;
+  }
+  .content {
+  margin-top: 1em;
+    h1 {
+    line-height: 1.5em;
+    }
+    h2 {
+    line-height: 2em;
+    }
   }
   #content {
       h1 {
@@ -46,6 +56,9 @@ body.two-col {
       P {
       font-size: 1.0em;
       line-height: 1.5em;
+      }
+      a {
+      color: blue;
       }
     margin-top: 2em;
     margin-left: 2em;
