@@ -6,7 +6,7 @@ tags:  [ Oauth ]
 ---
 
 
-# Learning Oauth2
+# Learning OAuth2
 ## Part I  of Creating an app using the Clio API
 
 The http specification and the REST specification (Representational State Transfer) form the backbone of the web. Through a RESTful interface browsers can communicate with web applications and web applications can communicate with each other. By providing a public API the owner of a web app can allow others to communicate with his app and allow for the exchange of data between his app and the world. Clio has recently published their RESTful API and this is a great boon to developers wanting to integrate with the Clio platform. 
