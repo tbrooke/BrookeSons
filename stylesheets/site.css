@@ -1,5 +1,6 @@
 #header {
   margin: 2em;
+  position: absolute;
   border-bottom: solid;
 }
 #header h1 {
@@ -15,7 +16,7 @@ body.two-col {
   margin-left: 5.1em;
 }
 body.two-col #sidebar {
-  margin-top: 1em;
+  margin-top: 10em;
   padding-top: 2em;
   padding-left: 2em;
   padding-bottom: 2em;
@@ -46,7 +47,7 @@ body.two-col .content h2 {
   line-height: 2em;
 }
 body.two-col #content {
-  margin-top: 2em;
+  margin-top: 10em;
   margin-left: 2em;
 }
 body.two-col #content h1 {

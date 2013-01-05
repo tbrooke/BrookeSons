@@ -2,13 +2,13 @@
 <feed xml:lang='en-US' xmlns='http://www.w3.org/2005/Atom'>
   <id>http://brookesonsweb.com/</id>
   <title>http://brookesonsweb.com</title>
-  <updated>2013-01-05T07:55:11-05:00</updated>
+  <updated>2013-01-05T07:55:49-05:00</updated>
   <link href='http://brookesonsweb.com/blog.atom' rel='self' type='application/atom+xml' />
   <link href='http://brookesonsweb.com/' rel='alternate' type='text/html' />
   <entry>
     <id>http://brookesonsweb.com/blog/2013/01/04/lets-learn-oauth2-clio-part-1.html</id>
     <title>Learning OAuth 2</title>
-    <updated>2013-01-05T07:55:11-05:00</updated>
+    <updated>2013-01-05T07:55:49-05:00</updated>
     <published>2013-01-04T00:00:00Z</published>
     <link href='http://brookesonsweb.com/blog/2013/01/04/lets-learn-oauth2-clio-part-1.html' rel='alternate' type='text/html' />
     <summary>
@@ -112,7 +112,7 @@ Clio is...
   <entry>
     <id>http://brookesonsweb.com/blog/2012/12/16/Twin-Maps-Revisited.html</id>
     <title>Twin Maps Revisited</title>
-    <updated>2013-01-04T23:13:50-05:00</updated>
+    <updated>2013-01-05T07:55:49-05:00</updated>
     <published>2012-12-16T00:00:00Z</published>
     <link href='http://brookesonsweb.com/blog/2012/12/16/Twin-Maps-Revisited.html' rel='alternate' type='text/html' />
     <summary>
@@ -142,7 +142,7 @@ Clio is...
   <entry>
     <id>http://brookesonsweb.com/blog/2012/12/05/clojure-day.html</id>
     <title>Clojure Day Report</title>
-    <updated>2013-01-04T23:13:50-05:00</updated>
+    <updated>2013-01-05T07:55:49-05:00</updated>
     <published>2012-12-05T00:00:00Z</published>
     <link href='http://brookesonsweb.com/blog/2012/12/05/clojure-day.html' rel='alternate' type='text/html' />
     <summary>
@@ -202,7 +202,7 @@ In Practicing  Ruby issue 5.8  Gregory described his experiences in studying swa
   <entry>
     <id>http://brookesonsweb.com/blog/2012/11/07/main-street-on-rails.html</id>
     <title>Main Street Mission on Rails</title>
-    <updated>2013-01-04T23:13:50-05:00</updated>
+    <updated>2013-01-05T07:55:49-05:00</updated>
     <published>2012-11-07T00:00:00Z</published>
     <link href='http://brookesonsweb.com/blog/2012/11/07/main-street-on-rails.html' rel='alternate' type='text/html' />
     <summary>
