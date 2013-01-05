@@ -4,6 +4,7 @@
 
 #header {
   margin: 2em;
+  position:absolute;
   h1 {
       font-size: 2.5em;
    } 
@@ -18,7 +19,7 @@
 body.two-col {
   margin-left: 5.1em;
   #sidebar {
-      margin-top: 1em;
+      margin-top: 10em;
       padding-top: 2em;
       padding-left: 2em;
       padding-bottom: 2em;
@@ -60,7 +61,7 @@ body.two-col {
       a {
       color: blue;
       }
-    margin-top: 2em;
+    margin-top: 10em;
     margin-left: 2em;
     a:link  {
     text-decoration:  none;
