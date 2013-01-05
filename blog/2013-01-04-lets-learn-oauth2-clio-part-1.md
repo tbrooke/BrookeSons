@@ -18,7 +18,7 @@ Clio is a cloud based law practice management tool developed in Ruby on Rails. T
 
 The analogy set out in an introduction to OAuth2 is that of giving a valet key to a parking lot attendant. It grants limited access to your car but not full access to the trunk or whatever. It is the same with OAuth2 authentication. You can grant someone, or in most cases another web site, limited access to the resources on your web site without giving them a password or full access. Clio uses what is know as a *Grant type authorization* based on the obtaining of an authorization code or token to allow access. 
 
-Security, again, is a primary consideration. You are granting access under the covers by allowing a specified web site to issue a RESTful API request to Clio and then returning a json string in response to that request. Only the specified client from the specified web site, with the specified Client Id and Client Secret can do this and only for 10 minutes without renewed authority. 
+Security, again is a primary consideration. You are granting access under the covers by allowing a specified web site to issue a RESTful API request to Clio and then returning a json string in response to that request. Only the specified client from the specified web site, with the specified Client Id and Client Secret can do this and only for 10 minutes without renewed authority. 
 
 
 Some times it helps to manually walk through a procedure and one of the easiest ways to start working with OAuth2 is to check out Google's
