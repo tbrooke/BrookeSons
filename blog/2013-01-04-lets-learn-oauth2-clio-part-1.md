@@ -21,7 +21,7 @@ The analogy set out in an introduction to OAuth2 is that of giving a valet key t
 Security, again, is a primary consideration, You are granting access under the covers by allowing a specified web site to issue a RESTful API request to Clio and then returning a json string in response to that request. Only the specified client from the specified web site, with the specified Client Id and Client Secret can do this and only for 10 minutes without renewed authority. 
 
 
-Some times it helps to manually walk through a procedure and one of the easiest ways to start working with OAuth2 is to check out Google's'
+Some times it helps to manually walk through a procedure and one of the easiest ways to start working with OAuth2 is to check out Google's
 
 
 [OAuth2 Playground](https://developers.google.com/oauthplayground/)
