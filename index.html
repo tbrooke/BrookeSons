@@ -107,14 +107,15 @@
 
 <p>then enter your GET request as a full address ie: https://app.goclio.com//api/v1/matters</p>
 
-<p>And viola we get our response:</p>
+<p>An] viola we get our response:</p>
 
 <pre><code>&#x000A;{"matters":[{"id":1017058013,"client":{"id":863215887,"name":"Sam May",&#x000A;  "url":"/api/v1/contacts/863215887"},&#x000A;  "display_number":"00001-May","description":"New Matter",&#x000A;  "status":"Open","open_date":"2013-01-04","close_date":null,"pending_date":null,&#x000A;  "location":"","client_reference":"","responsible_attorney":{"id":343991381,"name":"Tom Brooke",&#x000A;  "url":"/api/v1/users/343991381"},"billable":true,&#x000A;  "maildrop_address":"643fedb36+matter1017058013@maildrop.goclio.com",&#x000A;  "created_at":"2013-01-04T19:02:26+00:00","updated_at":"2013-01-04T19:02:26+00:00"}],&#x000A;  "records":1,"limit":1000,"next_offset":1017058013}</pre>
 
 
 <p></code></p>
 
-<p>Now you can go through the Clio routing table ![Routing Table] (http://api-docs.goclio.com/http-routingtable.html) and you can experiment with any query you want. That's it. Of course we will be performing all of this automatically as in the Ruby code provided by Clio or we can write our own code in Ruby, Clojure or whatever. In future posts we'll explore how to set this up using Ruby and create a simple Sinatra application that runs on Heroku and talks to the Clio API</p>
+<p>Now you can go through the Clio routing table
+![] (http://api-docs.goclio.com/http-routingtable.html) and you can experiment with any query you want. That's it. Of course we will be performing all of this automatically as in the Ruby code provided by Clio or we can write our own code in Ruby, Clojure or whatever. In future posts we'll explore how to set this up using Ruby and create a simple Sinatra application that runs on Heroku and talks to the Clio API</p>
 
 <p>Feel free to leave comments or questions and consider joining our Google Group at: <a href="https://groups.google.com/forum/?fromgroups=#!forum/clio-developers">Clio Developer Group</a> where we discuss these things. In the next post we'll put together a Sinatra app that uses the API and authentication we have covered here.</p>
   </div>

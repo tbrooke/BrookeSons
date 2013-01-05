@@ -2,13 +2,13 @@
 <feed xml:lang='en-US' xmlns='http://www.w3.org/2005/Atom'>
   <id>http://brookesonsweb.com/</id>
   <title>http://brookesonsweb.com</title>
-  <updated>2013-01-04T21:04:13-05:00</updated>
+  <updated>2013-01-04T21:06:18-05:00</updated>
   <link href='http://brookesonsweb.com/blog.atom' rel='self' type='application/atom+xml' />
   <link href='http://brookesonsweb.com/' rel='alternate' type='text/html' />
   <entry>
     <id>http://brookesonsweb.com/blog/2013/01/04/lets-learn-oauth2-clio-part-1.html</id>
     <title>Learning Oauth 2</title>
-    <updated>2013-01-04T21:04:13-05:00</updated>
+    <updated>2013-01-04T21:06:18-05:00</updated>
     <published>2013-01-04T00:00:00Z</published>
     <link href='http://brookesonsweb.com/blog/2013/01/04/lets-learn-oauth2-clio-part-1.html' rel='alternate' type='text/html' />
     <summary>
@@ -96,14 +96,15 @@ Clio is...
 
 &lt;p&gt;then enter your GET request as a full address ie: https://app.goclio.com//api/v1/matters&lt;/p&gt;
 
-&lt;p&gt;And viola we get our response:&lt;/p&gt;
+&lt;p&gt;An] viola we get our response:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;&amp;#x000A;{&quot;matters&quot;:[{&quot;id&quot;:1017058013,&quot;client&quot;:{&quot;id&quot;:863215887,&quot;name&quot;:&quot;Sam May&quot;,&amp;#x000A;  &quot;url&quot;:&quot;/api/v1/contacts/863215887&quot;},&amp;#x000A;  &quot;display_number&quot;:&quot;00001-May&quot;,&quot;description&quot;:&quot;New Matter&quot;,&amp;#x000A;  &quot;status&quot;:&quot;Open&quot;,&quot;open_date&quot;:&quot;2013-01-04&quot;,&quot;close_date&quot;:null,&quot;pending_date&quot;:null,&amp;#x000A;  &quot;location&quot;:&quot;&quot;,&quot;client_reference&quot;:&quot;&quot;,&quot;responsible_attorney&quot;:{&quot;id&quot;:343991381,&quot;name&quot;:&quot;Tom Brooke&quot;,&amp;#x000A;  &quot;url&quot;:&quot;/api/v1/users/343991381&quot;},&quot;billable&quot;:true,&amp;#x000A;  &quot;maildrop_address&quot;:&quot;643fedb36+matter1017058013@maildrop.goclio.com&quot;,&amp;#x000A;  &quot;created_at&quot;:&quot;2013-01-04T19:02:26+00:00&quot;,&quot;updated_at&quot;:&quot;2013-01-04T19:02:26+00:00&quot;}],&amp;#x000A;  &quot;records&quot;:1,&quot;limit&quot;:1000,&quot;next_offset&quot;:1017058013}&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;p&gt;&lt;/p&gt;
 
-&lt;p&gt;Now you can go through the Clio routing table ![Routing Table] (http://api-docs.goclio.com/http-routingtable.html) and you can experiment with any query you want. That's it. Of course we will be performing all of this automatically as in the Ruby code provided by Clio or we can write our own code in Ruby, Clojure or whatever. In future posts we'll explore how to set this up using Ruby and create a simple Sinatra application that runs on Heroku and talks to the Clio API&lt;/p&gt;
+&lt;p&gt;Now you can go through the Clio routing table
+![] (http://api-docs.goclio.com/http-routingtable.html) and you can experiment with any query you want. That's it. Of course we will be performing all of this automatically as in the Ruby code provided by Clio or we can write our own code in Ruby, Clojure or whatever. In future posts we'll explore how to set this up using Ruby and create a simple Sinatra application that runs on Heroku and talks to the Clio API&lt;/p&gt;
 
 &lt;p&gt;Feel free to leave comments or questions and consider joining our Google Group at: &lt;a href=&quot;https://groups.google.com/forum/?fromgroups=#!forum/clio-developers&quot;&gt;Clio Developer Group&lt;/a&gt; where we discuss these things. In the next post we'll put together a Sinatra app that uses the API and authentication we have covered here.&lt;/p&gt;
     </content>
@@ -111,7 +112,7 @@ Clio is...
   <entry>
     <id>http://brookesonsweb.com/blog/2012/12/16/Twin-Maps-Revisited.html</id>
     <title>Twin Maps Revisited</title>
-    <updated>2013-01-04T21:03:26-05:00</updated>
+    <updated>2013-01-04T21:04:59-05:00</updated>
     <published>2012-12-16T00:00:00Z</published>
     <link href='http://brookesonsweb.com/blog/2012/12/16/Twin-Maps-Revisited.html' rel='alternate' type='text/html' />
     <summary>
@@ -141,7 +142,7 @@ Clio is...
   <entry>
     <id>http://brookesonsweb.com/blog/2012/12/05/clojure-day.html</id>
     <title>Clojure Day Report</title>
-    <updated>2013-01-04T21:03:26-05:00</updated>
+    <updated>2013-01-04T21:04:59-05:00</updated>
     <published>2012-12-05T00:00:00Z</published>
     <link href='http://brookesonsweb.com/blog/2012/12/05/clojure-day.html' rel='alternate' type='text/html' />
     <summary>
@@ -201,7 +202,7 @@ In Practicing  Ruby issue 5.8  Gregory described his experiences in studying swa
   <entry>
     <id>http://brookesonsweb.com/blog/2012/11/07/main-street-on-rails.html</id>
     <title>Main Street Mission on Rails</title>
-    <updated>2013-01-04T21:03:26-05:00</updated>
+    <updated>2013-01-04T21:04:59-05:00</updated>
     <published>2012-11-07T00:00:00Z</published>
     <link href='http://brookesonsweb.com/blog/2012/11/07/main-street-on-rails.html' rel='alternate' type='text/html' />
     <summary>
