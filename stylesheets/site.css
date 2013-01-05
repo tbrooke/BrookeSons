@@ -30,10 +30,20 @@ body.two-col #sidebar a:link {
   text-decoration: none;
 }
 body.two-col .post {
+  margin-top: .5em;
   margin-bottom: 2.0em;
 }
 body.two-col .post h2 {
   font-size: 1.5em;
+}
+body.two-col .content {
+  margin-top: 1em;
+}
+body.two-col .content h1 {
+  line-height: 1.5em;
+}
+body.two-col .content h2 {
+  line-height: 2em;
 }
 body.two-col #content {
   margin-top: 2em;
@@ -45,6 +55,9 @@ body.two-col #content h1 {
 body.two-col #content P {
   font-size: 1.0em;
   line-height: 1.5em;
+}
+body.two-col #content a {
+  color: blue;
 }
 body.two-col #content a:link {
   text-decoration: none;
