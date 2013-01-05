@@ -2,13 +2,13 @@
 <feed xml:lang='en-US' xmlns='http://www.w3.org/2005/Atom'>
   <id>http://brookesonsweb.com/</id>
   <title>http://brookesonsweb.com</title>
-  <updated>2013-01-04T20:31:54-05:00</updated>
+  <updated>2013-01-04T20:40:25-05:00</updated>
   <link href='http://brookesonsweb.com/blog.atom' rel='self' type='application/atom+xml' />
   <link href='http://brookesonsweb.com/' rel='alternate' type='text/html' />
   <entry>
     <id>http://brookesonsweb.com/blog/2013/01/04/lets-learn-oauth2-clio-part-1.html</id>
     <title>Learning Oauth 2</title>
-    <updated>2013-01-04T20:31:54-05:00</updated>
+    <updated>2013-01-04T20:40:25-05:00</updated>
     <published>2013-01-04T00:00:00Z</published>
     <link href='http://brookesonsweb.com/blog/2013/01/04/lets-learn-oauth2-clio-part-1.html' rel='alternate' type='text/html' />
     <summary>
@@ -79,8 +79,9 @@ Clio is...
 
 &lt;p&gt;https://app.goclio.com//api/v1/users/who_am_i&lt;/p&gt;
 
-&lt;p&gt;If we have done everything right we get back:
-&lt;img src=&quot;&quot; title=&quot;blog/assets/Me.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;If we have done everything right we get back:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;blog/assets/Me.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;&amp;#x000A;{&quot;account&quot;:{&quot;id&quot;:&quot;8DTsvjEvjIfpufuz/vefRw&quot;,&quot;owner&quot;:{&quot;id&quot;:343991381,&quot;name&quot;:&quot;Tom Brooke&quot;,&amp;#x000A;   &quot;url&quot;:&quot;/api/v1/users/343991381&quot;}, &quot;name&quot;:&quot;Law Office of Tom Brooke&quot;,&amp;#x000A;   &quot;maildrop_address&quot;:&quot;643fedb36@maildrop.goclio.com&quot;,&quot;created_at&quot;:&quot;2011-03-14T20:15:50+00:00&quot;,&amp;#x000A;   &quot;updated_at&quot;:&quot;2012-11-15T00:07:53+00:00&quot;},&quot;user&quot;:{&quot;id&quot;:343991381,&quot;email&quot;:&quot;tom.brooke@gmail.com&quot;,&amp;#x000A;   &quot;first_name&quot;:&quot;Tom&quot;,&quot;last_name&quot;:&quot;Brooke&quot;,&quot;time_zone&quot;:&quot;Eastern Time (US &amp; Canada)&quot;,&amp;#x000A;   &quot;enabled&quot;:true,&quot;subscription_plan&quot;:&quot;Attorney&quot;,&quot;created_at&quot;:&quot;2011-03-14T20:15:51+00:00&quot;,&amp;#x000A;   &quot;updated_at&quot;:&quot;2011-10-06T04:53:43+00:00&quot;}}&lt;/code&gt;&lt;/pre&gt;
 
@@ -108,7 +109,7 @@ Clio is...
   <entry>
     <id>http://brookesonsweb.com/blog/2012/12/16/Twin-Maps-Revisited.html</id>
     <title>Twin Maps Revisited</title>
-    <updated>2012-12-22T09:55:25-05:00</updated>
+    <updated>2013-01-04T20:34:34-05:00</updated>
     <published>2012-12-16T00:00:00Z</published>
     <link href='http://brookesonsweb.com/blog/2012/12/16/Twin-Maps-Revisited.html' rel='alternate' type='text/html' />
     <summary>
@@ -138,7 +139,7 @@ Clio is...
   <entry>
     <id>http://brookesonsweb.com/blog/2012/12/05/clojure-day.html</id>
     <title>Clojure Day Report</title>
-    <updated>2012-12-22T09:55:25-05:00</updated>
+    <updated>2013-01-04T20:34:34-05:00</updated>
     <published>2012-12-05T00:00:00Z</published>
     <link href='http://brookesonsweb.com/blog/2012/12/05/clojure-day.html' rel='alternate' type='text/html' />
     <summary>
@@ -198,7 +199,7 @@ In Practicing  Ruby issue 5.8  Gregory described his experiences in studying swa
   <entry>
     <id>http://brookesonsweb.com/blog/2012/11/07/main-street-on-rails.html</id>
     <title>Main Street Mission on Rails</title>
-    <updated>2012-12-22T09:55:25-05:00</updated>
+    <updated>2013-01-04T20:34:34-05:00</updated>
     <published>2012-11-07T00:00:00Z</published>
     <link href='http://brookesonsweb.com/blog/2012/11/07/main-street-on-rails.html' rel='alternate' type='text/html' />
     <summary>
