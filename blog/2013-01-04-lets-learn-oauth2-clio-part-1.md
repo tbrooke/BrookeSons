@@ -42,7 +42,9 @@ Authorization endpoint: https://app.goclio.com/oauth/authorize/
 
 Token endpoint: https://app.goclio.com/oauth/token
 
-Access Token location: Authorization header w/ Bearer prefix ![](assets/setup.png)
+Access Token location: Authorization header w/ Bearer prefix
+
+![](blog/assets/setup.png)
 
 Now put in the OAuth Client ID and Client Secret that you received from Clio  
 
