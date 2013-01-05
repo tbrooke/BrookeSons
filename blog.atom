@@ -2,13 +2,13 @@
 <feed xml:lang='en-US' xmlns='http://www.w3.org/2005/Atom'>
   <id>http://brookesonsweb.com/</id>
   <title>http://brookesonsweb.com</title>
-  <updated>2013-01-04T23:11:50-05:00</updated>
+  <updated>2013-01-04T23:13:18-05:00</updated>
   <link href='http://brookesonsweb.com/blog.atom' rel='self' type='application/atom+xml' />
   <link href='http://brookesonsweb.com/' rel='alternate' type='text/html' />
   <entry>
     <id>http://brookesonsweb.com/blog/2013/01/04/lets-learn-oauth2-clio-part-1.html</id>
     <title>Learning OAuth 2</title>
-    <updated>2013-01-04T23:11:50-05:00</updated>
+    <updated>2013-01-04T23:13:18-05:00</updated>
     <published>2013-01-04T00:00:00Z</published>
     <link href='http://brookesonsweb.com/blog/2013/01/04/lets-learn-oauth2-clio-part-1.html' rel='alternate' type='text/html' />
     <summary>
@@ -47,7 +47,7 @@ Clio is...
 
 &lt;p&gt;As the url for your application since this is the callback url needed to connect Clio and the Google playground together. The Clio side is the server side of your application. When you have this set up you can go to the Google playground and set up the client side of the equation.&lt;/p&gt;
 
-&lt;p&gt;To set this up for Clio you must use a custom configuration which you can set up by clicking on the little sprocket on the top right hand side of the screen. This will produce a drop down window entitled OAuth2 configuration. You are creating a Server side configuration so indicate that in the selection by selectin &quot;Servre-side&quot; in the selection window.  For the OAuth endpoints remember you are using custom instead of Google so select custom in the selection box. After you complete those fill in:&lt;/p&gt;
+&lt;p&gt;To set this up for Clio you must use a custom configuration which you can set up by clicking on the little sprocket on the top right hand side of the screen. This will produce a drop down window entitled OAuth2 configuration. You are creating a Server side configuration so indicate that in the selection by selectin &quot;Server-side&quot; in the selection window.  For the OAuth endpoints remember you are using custom instead of Google so select custom in the selection box. After you complete those fill in:&lt;/p&gt;
 
 &lt;p&gt;Authorization endpoint: https://app.goclio.com/oauth/authorize/&lt;/p&gt;
 
@@ -112,7 +112,7 @@ Clio is...
   <entry>
     <id>http://brookesonsweb.com/blog/2012/12/16/Twin-Maps-Revisited.html</id>
     <title>Twin Maps Revisited</title>
-    <updated>2013-01-04T22:02:03-05:00</updated>
+    <updated>2013-01-04T23:12:24-05:00</updated>
     <published>2012-12-16T00:00:00Z</published>
     <link href='http://brookesonsweb.com/blog/2012/12/16/Twin-Maps-Revisited.html' rel='alternate' type='text/html' />
     <summary>
@@ -142,7 +142,7 @@ Clio is...
   <entry>
     <id>http://brookesonsweb.com/blog/2012/12/05/clojure-day.html</id>
     <title>Clojure Day Report</title>
-    <updated>2013-01-04T22:02:03-05:00</updated>
+    <updated>2013-01-04T23:12:24-05:00</updated>
     <published>2012-12-05T00:00:00Z</published>
     <link href='http://brookesonsweb.com/blog/2012/12/05/clojure-day.html' rel='alternate' type='text/html' />
     <summary>
@@ -202,7 +202,7 @@ In Practicing  Ruby issue 5.8  Gregory described his experiences in studying swa
   <entry>
     <id>http://brookesonsweb.com/blog/2012/11/07/main-street-on-rails.html</id>
     <title>Main Street Mission on Rails</title>
-    <updated>2013-01-04T22:02:03-05:00</updated>
+    <updated>2013-01-04T23:12:24-05:00</updated>
     <published>2012-11-07T00:00:00Z</published>
     <link href='http://brookesonsweb.com/blog/2012/11/07/main-street-on-rails.html' rel='alternate' type='text/html' />
     <summary>
