@@ -1,5 +1,5 @@
 ---
-title: "Learning Oauth 2"
+title: "Learning OAuth 2"
 author: 'Tom Brooke'
 layout: blog
 tags:  [ Oauth ]
