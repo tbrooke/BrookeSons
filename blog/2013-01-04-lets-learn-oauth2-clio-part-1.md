@@ -72,7 +72,8 @@ https://app.goclio.com//api/v1/users/who_am_i
 
 
 If we have done everything right we get back:
-![]('blog/assets/Me.png')
+
+![](blog/assets/Me.png)
 
 <pre><code>
 {"account":{"id":"8DTsvjEvjIfpufuz/vefRw","owner":{"id":343991381,"name":"Tom Brooke",
