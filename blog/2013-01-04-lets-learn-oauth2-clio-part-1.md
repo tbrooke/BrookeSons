@@ -36,7 +36,7 @@ To get started you have to set up the Clio side of things by creating a new app 
 
 As the url for your application since this is the callback url needed to connect Clio and the Google playground together. The Clio side is the server side of your application. When you have this set up you can go to the Google playground and set up the client side of the equation. 
 
-To set this up for Clio you must use a custom configuration which you can set up by clicking on the little sprocket on the top right hand side of the screen. This will produce a drop down window entitled OAuth2 configuration. You are creating a Server side configuration so indicate that in the selection by selectin "Servre-side" in the selection window.  For the OAuth endpoints remember you are using custom instead of Google so select custom in the selection box. After you complete those fill in:
+To set this up for Clio you must use a custom configuration which you can set up by clicking on the little sprocket on the top right hand side of the screen. This will produce a drop down window entitled OAuth2 configuration. You are creating a Server side configuration so indicate that in the selection by selectin "Server-side" in the selection window.  For the OAuth endpoints remember you are using custom instead of Google so select custom in the selection box. After you complete those fill in:
 
 Authorization endpoint: https://app.goclio.com/oauth/authorize/
 
