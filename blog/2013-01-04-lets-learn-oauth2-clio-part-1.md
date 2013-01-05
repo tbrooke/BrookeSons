@@ -108,7 +108,7 @@ And viola we get our response:
   "records":1,"limit":1000,"next_offset":1017058013}
 </pre></code>
 
-That's it. Of course we will be performing all of this automatically as in the Ruby code provided by Clio or we can write our own code in Ruby, Clojure or whatever. In future posts we'll explore how to set this up using Ruby and create a simple Sinatra application that runs on Heroku and talks to the Clio API 
+Now you can go through the Clio routing table [Routing Table] (http://api-docs.goclio.com/http-routingtable.html) and you can experiment with any query you want. That's it. Of course we will be performing all of this automatically as in the Ruby code provided by Clio or we can write our own code in Ruby, Clojure or whatever. In future posts we'll explore how to set this up using Ruby and create a simple Sinatra application that runs on Heroku and talks to the Clio API 
 
 
 Feel free to leave comments or questions and consider joining our Google Group at: [Clio Developer Group](https://groups.google.com/forum/?fromgroups=#!forum/clio-developers) where we discuss these things. In the next post we'll put together a Sinatra app that uses the API and authentication we have covered here.
