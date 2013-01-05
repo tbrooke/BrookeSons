@@ -2,13 +2,13 @@
 <feed xml:lang='en-US' xmlns='http://www.w3.org/2005/Atom'>
   <id>http://brookesonsweb.com/</id>
   <title>http://brookesonsweb.com</title>
-  <updated>2013-01-04T20:40:25-05:00</updated>
+  <updated>2013-01-04T20:52:33-05:00</updated>
   <link href='http://brookesonsweb.com/blog.atom' rel='self' type='application/atom+xml' />
   <link href='http://brookesonsweb.com/' rel='alternate' type='text/html' />
   <entry>
     <id>http://brookesonsweb.com/blog/2013/01/04/lets-learn-oauth2-clio-part-1.html</id>
     <title>Learning Oauth 2</title>
-    <updated>2013-01-04T20:40:25-05:00</updated>
+    <updated>2013-01-04T20:52:33-05:00</updated>
     <published>2013-01-04T00:00:00Z</published>
     <link href='http://brookesonsweb.com/blog/2013/01/04/lets-learn-oauth2-clio-part-1.html' rel='alternate' type='text/html' />
     <summary>
@@ -53,7 +53,9 @@ Clio is...
 
 &lt;p&gt;Token endpoint: https://app.goclio.com/oauth/token&lt;/p&gt;
 
-&lt;p&gt;Access Token location: Authorization header w/ Bearer prefix &lt;img src=&quot;assets/setup.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Access Token location: Authorization header w/ Bearer prefix&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;blog/assets/setup.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Now put in the OAuth Client ID and Client Secret that you received from Clio&lt;/p&gt;
 
@@ -109,7 +111,7 @@ Clio is...
   <entry>
     <id>http://brookesonsweb.com/blog/2012/12/16/Twin-Maps-Revisited.html</id>
     <title>Twin Maps Revisited</title>
-    <updated>2013-01-04T20:34:34-05:00</updated>
+    <updated>2013-01-04T20:41:15-05:00</updated>
     <published>2012-12-16T00:00:00Z</published>
     <link href='http://brookesonsweb.com/blog/2012/12/16/Twin-Maps-Revisited.html' rel='alternate' type='text/html' />
     <summary>
@@ -139,7 +141,7 @@ Clio is...
   <entry>
     <id>http://brookesonsweb.com/blog/2012/12/05/clojure-day.html</id>
     <title>Clojure Day Report</title>
-    <updated>2013-01-04T20:34:34-05:00</updated>
+    <updated>2013-01-04T20:41:15-05:00</updated>
     <published>2012-12-05T00:00:00Z</published>
     <link href='http://brookesonsweb.com/blog/2012/12/05/clojure-day.html' rel='alternate' type='text/html' />
     <summary>
@@ -199,7 +201,7 @@ In Practicing  Ruby issue 5.8  Gregory described his experiences in studying swa
   <entry>
     <id>http://brookesonsweb.com/blog/2012/11/07/main-street-on-rails.html</id>
     <title>Main Street Mission on Rails</title>
-    <updated>2013-01-04T20:34:34-05:00</updated>
+    <updated>2013-01-04T20:41:15-05:00</updated>
     <published>2012-11-07T00:00:00Z</published>
     <link href='http://brookesonsweb.com/blog/2012/11/07/main-street-on-rails.html' rel='alternate' type='text/html' />
     <summary>
