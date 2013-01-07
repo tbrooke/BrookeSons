@@ -77,15 +77,29 @@ If we have done everything right we get back:
 
 ![](/blog/assets/Me.png)
 
-```javascript
-{"account":{"id":"8DTsvjEvjIfpufuz/vefRw","owner":{"id":343991381,"name":"Tom Brooke",
-   "url":"/api/v1/users/343991381"}, "name":"Law Office of Tom Brooke",
-   "maildrop_address":"643fedb36@maildrop.goclio.com","created_at":"2011-03-14T20:15:50+00:00",
-   "updated_at":"2012-11-15T00:07:53+00:00"},"user":{"id":343991381,"email":"tom.brooke@gmail.com",
-   "first_name":"Tom","last_name":"Brooke","time_zone":"Eastern Time (US & Canada)",
-   "enabled":true,"subscription_plan":"Attorney","created_at":"2011-03-14T20:15:51+00:00",
-   "updated_at":"2011-10-06T04:53:43+00:00"}}
-```
+<pre><code>
+{ "account" : { "created_at" : "2011-03-14T20:15:50+00:00",
+      "id" : "8DTsvjEvjIfpufuz/vefRw",
+      "maildrop_address" : "643fedb36@maildrop.goclio.com",
+      "name" : "Law Office of Tom Brooke",
+      "owner" : { "id" : 343991381,
+          "name" : "Tom Brooke",
+          "url" : "/api/v1/users/343991381"
+        },
+      "updated_at" : "2012-11-15T00:07:53+00:00"
+    },
+  "user" : { "created_at" : "2011-03-14T20:15:51+00:00",
+      "email" : "tom.brooke@gmail.com",
+      "enabled" : true,
+      "first_name" : "Tom",
+      "id" : 343991381,
+      "last_name" : "Brooke",
+      "subscription_plan" : "Attorney",
+      "time_zone" : "Eastern Time (US & Canada)",
+      "updated_at" : "2011-10-06T04:53:43+00:00"
+    }
+}
+</pre></code>
 
 That's me - How cool is that !! 
 
@@ -93,19 +107,36 @@ Now let's look up our matters which is only one at this point:
 
 then enter your GET request as a full address ie: https://app.goclio.com//api/v1/matters 
 
-An] viola we get our response:
+And viola we get our response:
 
 <pre><code>
-{"matters":[{"id":1017058013,"client":{"id":863215887,"name":"Sam May",
-  "url":"/api/v1/contacts/863215887"},
-  "display_number":"00001-May","description":"New Matter",
-  "status":"Open","open_date":"2013-01-04","close_date":null,"pending_date":null,
-  "location":"","client_reference":"","responsible_attorney":{"id":343991381,"name":"Tom Brooke",
-  "url":"/api/v1/users/343991381"},"billable":true,
-  "maildrop_address":"643fedb36+matter1017058013@maildrop.goclio.com",
-  "created_at":"2013-01-04T19:02:26+00:00","updated_at":"2013-01-04T19:02:26+00:00"}],
-  "records":1,"limit":1000,"next_offset":1017058013}
-</pre></code>
+{ "limit" : 1000,
+  "matters" : [ { "billable" : true,
+        "client" : { "id" : 863215887,
+            "name" : "Sam May",
+            "url" : "/api/v1/contacts/863215887"
+          },
+        "client_reference" : "",
+        "close_date" : null,
+        "created_at" : "2013-01-04T19:02:26+00:00",
+        "description" : "New Matter",
+        "display_number" : "00001-May",
+        "id" : 1017058013,
+        "location" : "",
+        "maildrop_address" : "643fedb36+matter1017058013@maildrop.goclio.com",
+        "open_date" : "2013-01-04",
+        "pending_date" : null,
+        "responsible_attorney" : { "id" : 343991381,
+            "name" : "Tom Brooke",
+            "url" : "/api/v1/users/343991381"
+          },
+        "status" : "Open",
+        "updated_at" : "2013-01-04T19:02:26+00:00"
+      } ],
+  "next_offset" : 1017058013,
+  "records" : 1
+}
+</pre><code>
 
 Now you can go through the Clio routing table
 [Routing Table](http://api-docs.goclio.com/http-routingtable.html) and you can experiment with any query you want. That's it. Of course we will be performing all of this automatically as in the Ruby code provided by Clio or we can write our own code in Ruby, Clojure or whatever. In future posts we'll explore how to set this up using Ruby and create a simple Sinatra application that runs on Heroku and talks to the Clio API 

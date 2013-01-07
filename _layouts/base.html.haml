@@ -1,4 +1,4 @@
-
+ 
 %html
   %head
     %title
@@ -7,9 +7,11 @@
     %link{ :rel=>'stylesheet', :type=>'text/css', :href=>'/stylesheets/print.css', :media=>'print' }
     %link{ :rel=>'stylesheet', :type=>'text/css', :href=>'/stylesheets/text.css', :media=>'screen, print' }
     %link{ :rel=>'stylesheet', :type=>'text/css', :href=>'/stylesheets/site.css', :media=>'screen' }
-    /[if lt IE 8]
-      %link{ :rel=>'stylesheet', :type=>'text/css', :href=>'/stylesheets/ie.css', :media=>'screen, projection' }
-  %body.two-col
+    %link{ :rel=>'stylesheet', :type=>'text/css', :href=>'/stylesheets/styles/default.css'}
+      %script{:src => "/js/highlight.pack.js"}
+      :javascript
+        hljs.initHighlightingOnLoad();
+    %body.two-col
     #content_container
       #header
         %a{:href=>site.base_url}
