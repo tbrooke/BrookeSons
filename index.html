@@ -7,11 +7,15 @@
     <link href='/stylesheets/print.css' media='print' rel='stylesheet' type='text/css' />
     <link href='/stylesheets/text.css' media='screen, print' rel='stylesheet' type='text/css' />
     <link href='/stylesheets/site.css' media='screen' rel='stylesheet' type='text/css' />
-    <!--[if lt IE 8]>
-      <link href='/stylesheets/ie.css' media='screen, projection' rel='stylesheet' type='text/css' />
-    <![endif]-->
-  </head>
-  <body class='two-col'>
+    <link href='/stylesheets/styles/default.css' rel='stylesheet' type='text/css'>
+      <script src='/js/highlight.pack.js'></script>
+      <script type='text/javascript'>
+        //<![CDATA[
+          hljs.initHighlightingOnLoad();
+        //]]>
+      </script>
+    </link>
+    <body class='two-col'></body>
     <div id='content_container'>
       <div id='header'>
         <a href='http://brookesonsweb.com'>
@@ -101,7 +105,10 @@
 
 <p><img src="/blog/assets/Me.png" alt="" /></p>
 
-<p><code>javascript&#x000A;{"account":{"id":"8DTsvjEvjIfpufuz/vefRw","owner":{"id":343991381,"name":"Tom Brooke",&#x000A;   "url":"/api/v1/users/343991381"}, "name":"Law Office of Tom Brooke",&#x000A;   "maildrop_address":"643fedb36@maildrop.goclio.com","created_at":"2011-03-14T20:15:50+00:00",&#x000A;   "updated_at":"2012-11-15T00:07:53+00:00"},"user":{"id":343991381,"email":"tom.brooke@gmail.com",&#x000A;   "first_name":"Tom","last_name":"Brooke","time_zone":"Eastern Time (US &amp; Canada)",&#x000A;   "enabled":true,"subscription_plan":"Attorney","created_at":"2011-03-14T20:15:51+00:00",&#x000A;   "updated_at":"2011-10-06T04:53:43+00:00"}}</code></p>
+<pre><code>&#x000A;{ "account" : { "created_at" : "2011-03-14T20:15:50+00:00",&#x000A;      "id" : "8DTsvjEvjIfpufuz/vefRw",&#x000A;      "maildrop_address" : "643fedb36@maildrop.goclio.com",&#x000A;      "name" : "Law Office of Tom Brooke",&#x000A;      "owner" : { "id" : 343991381,&#x000A;          "name" : "Tom Brooke",&#x000A;          "url" : "/api/v1/users/343991381"&#x000A;        },&#x000A;      "updated_at" : "2012-11-15T00:07:53+00:00"&#x000A;    },&#x000A;  "user" : { "created_at" : "2011-03-14T20:15:51+00:00",&#x000A;      "email" : "tom.brooke@gmail.com",&#x000A;      "enabled" : true,&#x000A;      "first_name" : "Tom",&#x000A;      "id" : 343991381,&#x000A;      "last_name" : "Brooke",&#x000A;      "subscription_plan" : "Attorney",&#x000A;      "time_zone" : "Eastern Time (US & Canada)",&#x000A;      "updated_at" : "2011-10-06T04:53:43+00:00"&#x000A;    }&#x000A;}</pre>
+
+
+<p></code></p>
 
 <p>That's me - How cool is that !!</p>
 
@@ -109,89 +116,12 @@
 
 <p>then enter your GET request as a full address ie: https://app.goclio.com//api/v1/matters</p>
 
-<p>An] viola we get our response:</p>
+<p>And viola we get our response:</p>
 
-<pre><code>&#x000A;{"matters":[{"id":1017058013,"client":{"id":863215887,"name":"Sam May",&#x000A;  "url":"/api/v1/contacts/863215887"},&#x000A;  "display_number":"00001-May","description":"New Matter",&#x000A;  "status":"Open","open_date":"2013-01-04","close_date":null,"pending_date":null,&#x000A;  "location":"","client_reference":"","responsible_attorney":{"id":343991381,"name":"Tom Brooke",&#x000A;  "url":"/api/v1/users/343991381"},"billable":true,&#x000A;  "maildrop_address":"643fedb36+matter1017058013@maildrop.goclio.com",&#x000A;  "created_at":"2013-01-04T19:02:26+00:00","updated_at":"2013-01-04T19:02:26+00:00"}],&#x000A;  "records":1,"limit":1000,"next_offset":1017058013}</pre>
-
-
-<p></code></p>
-
-<p>Now you can go through the Clio routing table
-<a href="http://api-docs.goclio.com/http-routingtable.html">Routing Table</a> and you can experiment with any query you want. That's it. Of course we will be performing all of this automatically as in the Ruby code provided by Clio or we can write our own code in Ruby, Clojure or whatever. In future posts we'll explore how to set this up using Ruby and create a simple Sinatra application that runs on Heroku and talks to the Clio API</p>
-
-<p>Feel free to leave comments or questions and consider joining our Google Group at: <a href="https://groups.google.com/forum/?fromgroups=#!forum/clio-developers">Clio Developer Group</a> where we discuss these things. In the next post we'll put together a Sinatra app that uses the API and authentication we have covered here.</p>
-  </div>
-  <div class='comments'>
-     <a href="http://brookesonsweb.com/blog/2013/01/04/lets-learn-oauth2-clio-part-1/#disqus_thread" data-disqus-identifier="">Comments</a>
-  </div>
-</div>
-<div class='post'>
-  <h2>
-    <a href='/blog/2012/12/16/Twin-Maps-Revisited/'>
-      Twin Maps Revisited
-    </a>
-  </h2>
-  <h3>
-    16 December 2012
-  </h3>
-  <h4>
-    <a href='/blog/tags/twinmaps/'>
-      twinmaps
-    </a>
-  </h4>
-  <div class='content'>
-    <p><em>Success is not a place at which one arrives but rather the spirit with which one undertakes and continues the journey.</em>
-    Alex Noble   via the September 8, 2010 <a href="http://www.twinmaps.com/">Twinmaps</a> <a href="http://www.twinmaps.com/post/139283-arrival-in-cleveland">post</a> by Richard Brooke</p>
-    
-    <iframe src="http://player.vimeo.com/video/24402425?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-    
-    
-    <p> <p><a href="http://vimeo.com/24402425">"Dear America" - Twin Maps Trailer</a> from <a href="http://vimeo.com/user4721457">Twin Maps</a> on <a href="http://vimeo.com">Vimeo</a>.</p></p>
-    
-    <p>A perfect start for the Brooke and Sons Blog</p>
-  </div>
-  <div class='comments'>
-     <a href="http://brookesonsweb.com/blog/2012/12/16/Twin-Maps-Revisited/#disqus_thread" data-disqus-identifier="">Comments</a>
-  </div>
-</div>
-<div class='post'>
-  <h2>
-    <a href='/blog/2012/12/05/clojure-day/'>
-      Clojure Day Report
-    </a>
-  </h2>
-  <h3>
-    05 December 2012
-  </h3>
-  <h4>
-    <a href='/blog/tags/clojure/'>
-      clojure
-    </a>
-    <a href='/blog/tags/Mendicant/'>
-      Mendicant
-    </a>
-  </h4>
-  <div class='content'>
-    <p>Gregory Brown is well know in the Ruby Community and Mendicant University has spawned many Ruby developers. Recently he decided to step out of Ruby and take a look at Clojure. The result was Clojure Day and a summary follows:</p>
-
-<p>In Practicing  <a href="https://practicingruby.com/articles/92">Ruby issue 5.8</a>  Gregory described his experiences in studying swarming behavior and how they lead to the discovery of a Rich Hickey <a href="https://gist.github.com/1093917">project</a> simulating an ant colony written in Clojure. Gregory decided to look into the Clojure code then Clojure itself and the Mendicant University Clojure Day was born. Several respondents expressed an interest in learning more about Clojure and it was decided that an email format would be best, with everyone researching on their own then reporting back to the group on November 29 [Clojure Day].</p>
-
-<br />
+<pre><code>&#x000A;{ "limit" : 1000,&#x000A;  "matters" : [ { "billable" : true,&#x000A;        "client" : { "id" : 863215887,&#x000A;            "name" : "Sam May",&#x000A;            "url" : "/api/v1/contacts/863215887"&#x000A;          },&#x000A;        "client_reference" : "",&#x000A;        "close_date" : null,&#x000A;        "created_at" : "2013-01-04T19:02:26+00:00",&#x000A;        "description" : "New Matter",&#x000A;        "display_number" : "00001-May",&#x000A;        "id" : 1017058013,&#x000A;        "location" : "",&#x000A;        "maildrop_address" : "643fedb36+matter1017058013@maildrop.goclio.com",&#x000A;        "open_date" : "2013-01-04",&#x000A;        "pending_date" : null,&#x000A;        "responsible_attorney" : { "id" : 343991381,&#x000A;            "name" : "Tom Brooke",&#x000A;            "url" : "/api/v1/users/343991381"&#x000A;          },&#x000A;        "status" : "Open",&#x000A;        "updated_at" : "2013-01-04T19:02:26+00:00"&#x000A;      } ],&#x000A;  "next_offset" : 1017058013,&#x000A;  "records" : 1&#x000A;}</pre>
 
 
-<p>Gregory kicked things off around midnight on the 18th and a number of participants started in with their posts.  Several folks were doing some reading; Morgan Nelson started Marick's <a href="https://leanpub.com/fp-oo">Functional Programming for the Object Oriented Programmer</a>, a few others started reading <a href="http://pragprog.com/book/shcloj2/programming-clojure">Programming Clojure</a>. Also there was the usual tool discussion with some trying to tackle Emacs along with Clojure and others sticking with Vim or whatever.</p>
-
-<br />
-
-
-<p>Gregory went back to Puzzle Node #4 <a href="http://puzzlenode.com/puzzles/4-robots-vs-lasers">Robots v Lasers</a> and tried to port a solution from Ruby to Clojure:</p>
-
-<br />
-
-
-<p>So far, I've translated my parser class. Here's what I came up with:</p>
-
-<pre><code>&#x000A;<br />&#x000A;------------------------------------------------------&#x000A;&#x000A;(def conveyor-symbols { \# :wall \| :laser })&#x000A;(def robot-symbol "X")&#x000A;&#x000A;(defn wall-data [text] (map #(conveyor-symbols %) text))&#x000A;&#x000A;(defn conveyor-data [input]&#x000A;  (let [[north middle south] (clojure.string/split input #"\n")]&#x000A;    { :north_side     (wall-data north)&#x000A;      :south_side     (wall-data south)&#x000A;      :robot_position (.indexOf middle robot-symbol)}))&#x000A;&#x000A;(pr (conveyor-data "#|#|#|##\n---X----\n###||###"))&#x000A;&#x000A;------------------------------------------------------&#x000A;&#x000A;The original Ruby code looked like this:&#x000A;&#x000A;------------------------------------------------------&#x000A;&#x000A;module Robotic&#x000A;  class Parser&#x000A;    CONVEYOR_SYMBOLS = { "#" => :wall, "|" => :laser }&#x000A;    ROBOT_SYMBOL = "X"&#x000A;&#x000A;    def initialize(text)&#x000A;      @text = text&#x000A;    end&#x000A;&#x000A;    def conveyor_data&#x000A;      north, middle, south = text.split&#x000A;      { :north_side => wall_data(north),&#x000A;        :south_side => wall_data(south),&#x000A;        :robot_position => middle.index(ROBOT_SYMBOL) }&#x000A;    end&#x000A;&#x000A;    private&#x000A;&#x000A;    attr_reader :text&#x000A;&#x000A;    def wall_data(wall_text)&#x000A;      wall_text.chars.map { |e| CONVEYOR_SYMBOLS[e] }&#x000A;    end&#x000A;  end&#x000A;end&#x000A;&#x000A;------------------------------------------------------&#x000A;</code></pre>
+<p><code></p>&#x000A;&#x000A;<p>Now you can go through the Clio routing table&#x000A;<a href="http://api-docs.goclio.com/http-routingtable.html">Routing Table</a> and you can experiment with any query you want. That's it. Of course we will be performing all of this automatically as in the Ruby code provided by Clio or we can write our own code in Ruby, Clojure or whatever. In future posts we'll explore how to set this up using Ruby and create a simple Sinatra application that runs on Heroku and talks to the Clio API</p>&#x000A;&#x000A;<p>Feel free to leave comments or questions and consider joining our Google Group at: <a href="https://groups.google.com/forum/?fromgroups=#!forum/clio-developers">Clio Developer Group</a> where we discuss these things. In the next post we'll put together a Sinatra app that uses the API and authentication we have covered here.</p>&#x000A;  </div>&#x000A;  <div class='comments'>&#x000A;     <a href="http://brookesonsweb.com/blog/2013/01/04/lets-learn-oauth2-clio-part-1/#disqus_thread" data-disqus-identifier="">Comments</a>&#x000A;  </div>&#x000A;</div>&#x000A;<div class='post'>&#x000A;  <h2>&#x000A;    <a href='/blog/2012/12/16/Twin-Maps-Revisited/'>&#x000A;      Twin Maps Revisited&#x000A;    </a>&#x000A;  </h2>&#x000A;  <h3>&#x000A;    16 December 2012&#x000A;  </h3>&#x000A;  <h4>&#x000A;    <a href='/blog/tags/twinmaps/'>&#x000A;      twinmaps&#x000A;    </a>&#x000A;  </h4>&#x000A;  <div class='content'>&#x000A;    <p><em>Success is not a place at which one arrives but rather the spirit with which one undertakes and continues the journey.</em>&#x000A;    Alex Noble   via the September 8, 2010 <a href="http://www.twinmaps.com/">Twinmaps</a> <a href="http://www.twinmaps.com/post/139283-arrival-in-cleveland">post</a> by Richard Brooke</p>&#x000A;    &#x000A;    <iframe src="http://player.vimeo.com/video/24402425?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>&#x000A;    &#x000A;    &#x000A;    <p> <p><a href="http://vimeo.com/24402425">"Dear America" - Twin Maps Trailer</a> from <a href="http://vimeo.com/user4721457">Twin Maps</a> on <a href="http://vimeo.com">Vimeo</a>.</p></p>&#x000A;    &#x000A;    <p>A perfect start for the Brooke and Sons Blog</p>&#x000A;  </div>&#x000A;  <div class='comments'>&#x000A;     <a href="http://brookesonsweb.com/blog/2012/12/16/Twin-Maps-Revisited/#disqus_thread" data-disqus-identifier="">Comments</a>&#x000A;  </div>&#x000A;</div>&#x000A;<div class='post'>&#x000A;  <h2>&#x000A;    <a href='/blog/2012/12/05/clojure-day/'>&#x000A;      Clojure Day Report&#x000A;    </a>&#x000A;  </h2>&#x000A;  <h3>&#x000A;    05 December 2012&#x000A;  </h3>&#x000A;  <h4>&#x000A;    <a href='/blog/tags/clojure/'>&#x000A;      clojure&#x000A;    </a>&#x000A;    <a href='/blog/tags/Mendicant/'>&#x000A;      Mendicant&#x000A;    </a>&#x000A;  </h4>&#x000A;  <div class='content'>&#x000A;    <p>Gregory Brown is well know in the Ruby Community and Mendicant University has spawned many Ruby developers. Recently he decided to step out of Ruby and take a look at Clojure. The result was Clojure Day and a summary follows:</p>&#x000A;&#x000A;<p>In Practicing  <a href="https://practicingruby.com/articles/92">Ruby issue 5.8</a>  Gregory described his experiences in studying swarming behavior and how they lead to the discovery of a Rich Hickey <a href="https://gist.github.com/1093917">project</a> simulating an ant colony written in Clojure. Gregory decided to look into the Clojure code then Clojure itself and the Mendicant University Clojure Day was born. Several respondents expressed an interest in learning more about Clojure and it was decided that an email format would be best, with everyone researching on their own then reporting back to the group on November 29 [Clojure Day].</p>&#x000A;&#x000A;<br />&#x000A;&#x000A;&#x000A;<p>Gregory kicked things off around midnight on the 18th and a number of participants started in with their posts.  Several folks were doing some reading; Morgan Nelson started Marick's <a href="https://leanpub.com/fp-oo">Functional Programming for the Object Oriented Programmer</a>, a few others started reading <a href="http://pragprog.com/book/shcloj2/programming-clojure">Programming Clojure</a>. Also there was the usual tool discussion with some trying to tackle Emacs along with Clojure and others sticking with Vim or whatever.</p>&#x000A;&#x000A;<br />&#x000A;&#x000A;&#x000A;<p>Gregory went back to Puzzle Node #4 <a href="http://puzzlenode.com/puzzles/4-robots-vs-lasers">Robots v Lasers</a> and tried to port a solution from Ruby to Clojure:</p>&#x000A;&#x000A;<br />&#x000A;&#x000A;&#x000A;<p>So far, I've translated my parser class. Here's what I came up with:</p>&#x000A;&#x000A;<pre><code>&#x000A;<br />&#x000A;------------------------------------------------------&#x000A;&#x000A;(def conveyor-symbols { \# :wall \| :laser })&#x000A;(def robot-symbol "X")&#x000A;&#x000A;(defn wall-data [text] (map #(conveyor-symbols %) text))&#x000A;&#x000A;(defn conveyor-data [input]&#x000A;  (let [[north middle south] (clojure.string/split input #"\n")]&#x000A;    { :north_side     (wall-data north)&#x000A;      :south_side     (wall-data south)&#x000A;      :robot_position (.indexOf middle robot-symbol)}))&#x000A;&#x000A;(pr (conveyor-data "#|#|#|##\n---X----\n###||###"))&#x000A;&#x000A;------------------------------------------------------&#x000A;&#x000A;The original Ruby code looked like this:&#x000A;&#x000A;------------------------------------------------------&#x000A;&#x000A;module Robotic&#x000A;  class Parser&#x000A;    CONVEYOR_SYMBOLS = { "#" => :wall, "|" => :laser }&#x000A;    ROBOT_SYMBOL = "X"&#x000A;&#x000A;    def initialize(text)&#x000A;      @text = text&#x000A;    end&#x000A;&#x000A;    def conveyor_data&#x000A;      north, middle, south = text.split&#x000A;      { :north_side => wall_data(north),&#x000A;        :south_side => wall_data(south),&#x000A;        :robot_position => middle.index(ROBOT_SYMBOL) }&#x000A;    end&#x000A;&#x000A;    private&#x000A;&#x000A;    attr_reader :text&#x000A;&#x000A;    def wall_data(wall_text)&#x000A;      wall_text.chars.map { |e| CONVEYOR_SYMBOLS[e] }&#x000A;    end&#x000A;  end&#x000A;end&#x000A;&#x000A;------------------------------------------------------&#x000A;</code></pre>
 
 
 <br />
@@ -355,5 +285,5 @@ luck to get something to eat.</p>
       pageTracker._trackPageview();
       } catch(err) {}</script>
     </div>
-  </body>
+  </head>
 </html>

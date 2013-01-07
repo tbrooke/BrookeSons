@@ -2,13 +2,13 @@
 <feed xml:lang='en-US' xmlns='http://www.w3.org/2005/Atom'>
   <id>http://brookesonsweb.com/</id>
   <title>http://brookesonsweb.com</title>
-  <updated>2013-01-06T20:43:58-05:00</updated>
+  <updated>2013-01-06T22:20:12-05:00</updated>
   <link href='http://brookesonsweb.com/blog.atom' rel='self' type='application/atom+xml' />
   <link href='http://brookesonsweb.com/' rel='alternate' type='text/html' />
   <entry>
     <id>http://brookesonsweb.com/blog/2013/01/04/lets-learn-oauth2-clio-part-1.html</id>
     <title>Learning OAuth 2</title>
-    <updated>2013-01-06T20:43:58-05:00</updated>
+    <updated>2013-01-06T22:20:12-05:00</updated>
     <published>2013-01-04T00:00:00Z</published>
     <link href='http://brookesonsweb.com/blog/2013/01/04/lets-learn-oauth2-clio-part-1.html' rel='alternate' type='text/html' />
     <summary>
@@ -85,7 +85,10 @@ Clio is...
 
 &lt;p&gt;&lt;img src=&quot;http://brookesonsweb.com/blog/assets/Me.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;javascript&amp;#x000A;{&quot;account&quot;:{&quot;id&quot;:&quot;8DTsvjEvjIfpufuz/vefRw&quot;,&quot;owner&quot;:{&quot;id&quot;:343991381,&quot;name&quot;:&quot;Tom Brooke&quot;,&amp;#x000A;   &quot;url&quot;:&quot;/api/v1/users/343991381&quot;}, &quot;name&quot;:&quot;Law Office of Tom Brooke&quot;,&amp;#x000A;   &quot;maildrop_address&quot;:&quot;643fedb36@maildrop.goclio.com&quot;,&quot;created_at&quot;:&quot;2011-03-14T20:15:50+00:00&quot;,&amp;#x000A;   &quot;updated_at&quot;:&quot;2012-11-15T00:07:53+00:00&quot;},&quot;user&quot;:{&quot;id&quot;:343991381,&quot;email&quot;:&quot;tom.brooke@gmail.com&quot;,&amp;#x000A;   &quot;first_name&quot;:&quot;Tom&quot;,&quot;last_name&quot;:&quot;Brooke&quot;,&quot;time_zone&quot;:&quot;Eastern Time (US &amp;amp; Canada)&quot;,&amp;#x000A;   &quot;enabled&quot;:true,&quot;subscription_plan&quot;:&quot;Attorney&quot;,&quot;created_at&quot;:&quot;2011-03-14T20:15:51+00:00&quot;,&amp;#x000A;   &quot;updated_at&quot;:&quot;2011-10-06T04:53:43+00:00&quot;}}&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;#x000A;{ &quot;account&quot; : { &quot;created_at&quot; : &quot;2011-03-14T20:15:50+00:00&quot;,&amp;#x000A;      &quot;id&quot; : &quot;8DTsvjEvjIfpufuz/vefRw&quot;,&amp;#x000A;      &quot;maildrop_address&quot; : &quot;643fedb36@maildrop.goclio.com&quot;,&amp;#x000A;      &quot;name&quot; : &quot;Law Office of Tom Brooke&quot;,&amp;#x000A;      &quot;owner&quot; : { &quot;id&quot; : 343991381,&amp;#x000A;          &quot;name&quot; : &quot;Tom Brooke&quot;,&amp;#x000A;          &quot;url&quot; : &quot;/api/v1/users/343991381&quot;&amp;#x000A;        },&amp;#x000A;      &quot;updated_at&quot; : &quot;2012-11-15T00:07:53+00:00&quot;&amp;#x000A;    },&amp;#x000A;  &quot;user&quot; : { &quot;created_at&quot; : &quot;2011-03-14T20:15:51+00:00&quot;,&amp;#x000A;      &quot;email&quot; : &quot;tom.brooke@gmail.com&quot;,&amp;#x000A;      &quot;enabled&quot; : true,&amp;#x000A;      &quot;first_name&quot; : &quot;Tom&quot;,&amp;#x000A;      &quot;id&quot; : 343991381,&amp;#x000A;      &quot;last_name&quot; : &quot;Brooke&quot;,&amp;#x000A;      &quot;subscription_plan&quot; : &quot;Attorney&quot;,&amp;#x000A;      &quot;time_zone&quot; : &quot;Eastern Time (US &amp; Canada)&quot;,&amp;#x000A;      &quot;updated_at&quot; : &quot;2011-10-06T04:53:43+00:00&quot;&amp;#x000A;    }&amp;#x000A;}&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;That's me - How cool is that !!&lt;/p&gt;
 
@@ -93,12 +96,12 @@ Clio is...
 
 &lt;p&gt;then enter your GET request as a full address ie: https://app.goclio.com//api/v1/matters&lt;/p&gt;
 
-&lt;p&gt;An] viola we get our response:&lt;/p&gt;
+&lt;p&gt;And viola we get our response:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;&amp;#x000A;{&quot;matters&quot;:[{&quot;id&quot;:1017058013,&quot;client&quot;:{&quot;id&quot;:863215887,&quot;name&quot;:&quot;Sam May&quot;,&amp;#x000A;  &quot;url&quot;:&quot;/api/v1/contacts/863215887&quot;},&amp;#x000A;  &quot;display_number&quot;:&quot;00001-May&quot;,&quot;description&quot;:&quot;New Matter&quot;,&amp;#x000A;  &quot;status&quot;:&quot;Open&quot;,&quot;open_date&quot;:&quot;2013-01-04&quot;,&quot;close_date&quot;:null,&quot;pending_date&quot;:null,&amp;#x000A;  &quot;location&quot;:&quot;&quot;,&quot;client_reference&quot;:&quot;&quot;,&quot;responsible_attorney&quot;:{&quot;id&quot;:343991381,&quot;name&quot;:&quot;Tom Brooke&quot;,&amp;#x000A;  &quot;url&quot;:&quot;/api/v1/users/343991381&quot;},&quot;billable&quot;:true,&amp;#x000A;  &quot;maildrop_address&quot;:&quot;643fedb36+matter1017058013@maildrop.goclio.com&quot;,&amp;#x000A;  &quot;created_at&quot;:&quot;2013-01-04T19:02:26+00:00&quot;,&quot;updated_at&quot;:&quot;2013-01-04T19:02:26+00:00&quot;}],&amp;#x000A;  &quot;records&quot;:1,&quot;limit&quot;:1000,&quot;next_offset&quot;:1017058013}&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;&amp;#x000A;{ &quot;limit&quot; : 1000,&amp;#x000A;  &quot;matters&quot; : [ { &quot;billable&quot; : true,&amp;#x000A;        &quot;client&quot; : { &quot;id&quot; : 863215887,&amp;#x000A;            &quot;name&quot; : &quot;Sam May&quot;,&amp;#x000A;            &quot;url&quot; : &quot;/api/v1/contacts/863215887&quot;&amp;#x000A;          },&amp;#x000A;        &quot;client_reference&quot; : &quot;&quot;,&amp;#x000A;        &quot;close_date&quot; : null,&amp;#x000A;        &quot;created_at&quot; : &quot;2013-01-04T19:02:26+00:00&quot;,&amp;#x000A;        &quot;description&quot; : &quot;New Matter&quot;,&amp;#x000A;        &quot;display_number&quot; : &quot;00001-May&quot;,&amp;#x000A;        &quot;id&quot; : 1017058013,&amp;#x000A;        &quot;location&quot; : &quot;&quot;,&amp;#x000A;        &quot;maildrop_address&quot; : &quot;643fedb36+matter1017058013@maildrop.goclio.com&quot;,&amp;#x000A;        &quot;open_date&quot; : &quot;2013-01-04&quot;,&amp;#x000A;        &quot;pending_date&quot; : null,&amp;#x000A;        &quot;responsible_attorney&quot; : { &quot;id&quot; : 343991381,&amp;#x000A;            &quot;name&quot; : &quot;Tom Brooke&quot;,&amp;#x000A;            &quot;url&quot; : &quot;/api/v1/users/343991381&quot;&amp;#x000A;          },&amp;#x000A;        &quot;status&quot; : &quot;Open&quot;,&amp;#x000A;        &quot;updated_at&quot; : &quot;2013-01-04T19:02:26+00:00&quot;&amp;#x000A;      } ],&amp;#x000A;  &quot;next_offset&quot; : 1017058013,&amp;#x000A;  &quot;records&quot; : 1&amp;#x000A;}&lt;/code&gt;&lt;/pre&gt;
 
 
-&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code /&gt;&lt;/p&gt;
 
 &lt;p&gt;Now you can go through the Clio routing table
 &lt;a href=&quot;http://api-docs.goclio.com/http-routingtable.html&quot;&gt;Routing Table&lt;/a&gt; and you can experiment with any query you want. That's it. Of course we will be performing all of this automatically as in the Ruby code provided by Clio or we can write our own code in Ruby, Clojure or whatever. In future posts we'll explore how to set this up using Ruby and create a simple Sinatra application that runs on Heroku and talks to the Clio API&lt;/p&gt;
@@ -109,7 +112,7 @@ Clio is...
   <entry>
     <id>http://brookesonsweb.com/blog/2012/12/16/Twin-Maps-Revisited.html</id>
     <title>Twin Maps Revisited</title>
-    <updated>2013-01-06T18:38:48-05:00</updated>
+    <updated>2013-01-06T22:08:55-05:00</updated>
     <published>2012-12-16T00:00:00Z</published>
     <link href='http://brookesonsweb.com/blog/2012/12/16/Twin-Maps-Revisited.html' rel='alternate' type='text/html' />
     <summary>
@@ -139,7 +142,7 @@ Clio is...
   <entry>
     <id>http://brookesonsweb.com/blog/2012/12/05/clojure-day.html</id>
     <title>Clojure Day Report</title>
-    <updated>2013-01-06T18:38:48-05:00</updated>
+    <updated>2013-01-06T22:08:55-05:00</updated>
     <published>2012-12-05T00:00:00Z</published>
     <link href='http://brookesonsweb.com/blog/2012/12/05/clojure-day.html' rel='alternate' type='text/html' />
     <summary>
@@ -199,7 +202,7 @@ In Practicing  Ruby issue 5.8  Gregory described his experiences in studying swa
   <entry>
     <id>http://brookesonsweb.com/blog/2012/11/07/main-street-on-rails.html</id>
     <title>Main Street Mission on Rails</title>
-    <updated>2013-01-06T18:38:48-05:00</updated>
+    <updated>2013-01-06T22:08:55-05:00</updated>
     <published>2012-11-07T00:00:00Z</published>
     <link href='http://brookesonsweb.com/blog/2012/11/07/main-street-on-rails.html' rel='alternate' type='text/html' />
     <summary>

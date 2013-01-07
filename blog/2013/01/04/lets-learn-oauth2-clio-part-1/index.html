@@ -7,11 +7,15 @@
     <link href='/stylesheets/print.css' media='print' rel='stylesheet' type='text/css' />
     <link href='/stylesheets/text.css' media='screen, print' rel='stylesheet' type='text/css' />
     <link href='/stylesheets/site.css' media='screen' rel='stylesheet' type='text/css' />
-    <!--[if lt IE 8]>
-      <link href='/stylesheets/ie.css' media='screen, projection' rel='stylesheet' type='text/css' />
-    <![endif]-->
-  </head>
-  <body class='two-col'>
+    <link href='/stylesheets/styles/default.css' rel='stylesheet' type='text/css'>
+      <script src='/js/highlight.pack.js'></script>
+      <script type='text/javascript'>
+        //<![CDATA[
+          hljs.initHighlightingOnLoad();
+        //]]>
+      </script>
+    </link>
+    <body class='two-col'></body>
     <div id='content_container'>
       <div id='header'>
         <a href='http://brookesonsweb.com'>
@@ -110,7 +114,10 @@
 
 <p><img src="/blog/assets/Me.png" alt="" /></p>
 
-<p><code>javascript&#x000A;{"account":{"id":"8DTsvjEvjIfpufuz/vefRw","owner":{"id":343991381,"name":"Tom Brooke",&#x000A;   "url":"/api/v1/users/343991381"}, "name":"Law Office of Tom Brooke",&#x000A;   "maildrop_address":"643fedb36@maildrop.goclio.com","created_at":"2011-03-14T20:15:50+00:00",&#x000A;   "updated_at":"2012-11-15T00:07:53+00:00"},"user":{"id":343991381,"email":"tom.brooke@gmail.com",&#x000A;   "first_name":"Tom","last_name":"Brooke","time_zone":"Eastern Time (US &amp; Canada)",&#x000A;   "enabled":true,"subscription_plan":"Attorney","created_at":"2011-03-14T20:15:51+00:00",&#x000A;   "updated_at":"2011-10-06T04:53:43+00:00"}}</code></p>
+<pre><code>&#x000A;{ "account" : { "created_at" : "2011-03-14T20:15:50+00:00",&#x000A;      "id" : "8DTsvjEvjIfpufuz/vefRw",&#x000A;      "maildrop_address" : "643fedb36@maildrop.goclio.com",&#x000A;      "name" : "Law Office of Tom Brooke",&#x000A;      "owner" : { "id" : 343991381,&#x000A;          "name" : "Tom Brooke",&#x000A;          "url" : "/api/v1/users/343991381"&#x000A;        },&#x000A;      "updated_at" : "2012-11-15T00:07:53+00:00"&#x000A;    },&#x000A;  "user" : { "created_at" : "2011-03-14T20:15:51+00:00",&#x000A;      "email" : "tom.brooke@gmail.com",&#x000A;      "enabled" : true,&#x000A;      "first_name" : "Tom",&#x000A;      "id" : 343991381,&#x000A;      "last_name" : "Brooke",&#x000A;      "subscription_plan" : "Attorney",&#x000A;      "time_zone" : "Eastern Time (US & Canada)",&#x000A;      "updated_at" : "2011-10-06T04:53:43+00:00"&#x000A;    }&#x000A;}</pre>
+
+
+<p></code></p>
 
 <p>That's me - How cool is that !!</p>
 
@@ -118,12 +125,12 @@
 
 <p>then enter your GET request as a full address ie: https://app.goclio.com//api/v1/matters</p>
 
-<p>An] viola we get our response:</p>
+<p>And viola we get our response:</p>
 
-<pre><code>&#x000A;{"matters":[{"id":1017058013,"client":{"id":863215887,"name":"Sam May",&#x000A;  "url":"/api/v1/contacts/863215887"},&#x000A;  "display_number":"00001-May","description":"New Matter",&#x000A;  "status":"Open","open_date":"2013-01-04","close_date":null,"pending_date":null,&#x000A;  "location":"","client_reference":"","responsible_attorney":{"id":343991381,"name":"Tom Brooke",&#x000A;  "url":"/api/v1/users/343991381"},"billable":true,&#x000A;  "maildrop_address":"643fedb36+matter1017058013@maildrop.goclio.com",&#x000A;  "created_at":"2013-01-04T19:02:26+00:00","updated_at":"2013-01-04T19:02:26+00:00"}],&#x000A;  "records":1,"limit":1000,"next_offset":1017058013}</pre>
+<pre><code>&#x000A;{ "limit" : 1000,&#x000A;  "matters" : [ { "billable" : true,&#x000A;        "client" : { "id" : 863215887,&#x000A;            "name" : "Sam May",&#x000A;            "url" : "/api/v1/contacts/863215887"&#x000A;          },&#x000A;        "client_reference" : "",&#x000A;        "close_date" : null,&#x000A;        "created_at" : "2013-01-04T19:02:26+00:00",&#x000A;        "description" : "New Matter",&#x000A;        "display_number" : "00001-May",&#x000A;        "id" : 1017058013,&#x000A;        "location" : "",&#x000A;        "maildrop_address" : "643fedb36+matter1017058013@maildrop.goclio.com",&#x000A;        "open_date" : "2013-01-04",&#x000A;        "pending_date" : null,&#x000A;        "responsible_attorney" : { "id" : 343991381,&#x000A;            "name" : "Tom Brooke",&#x000A;            "url" : "/api/v1/users/343991381"&#x000A;          },&#x000A;        "status" : "Open",&#x000A;        "updated_at" : "2013-01-04T19:02:26+00:00"&#x000A;      } ],&#x000A;  "next_offset" : 1017058013,&#x000A;  "records" : 1&#x000A;}</pre>
 
 
-<p></code></p>
+<p><code></p>
 
 <p>Now you can go through the Clio routing table
 <a href="http://api-docs.goclio.com/http-routingtable.html">Routing Table</a> and you can experiment with any query you want. That's it. Of course we will be performing all of this automatically as in the Ruby code provided by Clio or we can write our own code in Ruby, Clojure or whatever. In future posts we'll explore how to set this up using Ruby and create a simple Sinatra application that runs on Heroku and talks to the Clio API</p>
@@ -200,5 +207,5 @@
       pageTracker._trackPageview();
       } catch(err) {}</script>
     </div>
-  </body>
+  </head>
 </html>
