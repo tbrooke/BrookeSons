@@ -14,7 +14,9 @@
   <body class='two-col'>
     <div id='content_container'>
       <div id='header'>
-        <h1>Brooke and Sons Web Builders</h1>
+        <a href='http://brookesonsweb.com'>
+          <h1>Brooke and Sons Web Builders</h1>
+        </a>
       </div>
       <div id='content'>
         <div class='post_navigation'>
@@ -37,6 +39,9 @@
     Tags:
     <a href='/blog/tags/Oauth/'>
       Oauth
+    </a>
+    <a href='/blog/tags/Clio/'>
+      Clio
     </a>
     <hr />
   </h4>
@@ -75,7 +80,7 @@
 
 <p>Access Token location: Authorization header w/ Bearer prefix</p>
 
-<p><img src="blog/assets/setup.png" alt="" /></p>
+<p><img src="/blog/assets/setup.png" alt="" /></p>
 
 <p>Now put in the OAuth Client ID and Client Secret that you received from Clio</p>
 
@@ -87,11 +92,11 @@
 
 <p>now click on the Authorize APIs button and viola you're at Clio</p>
 
-<p><img src="blog/assets/ClioConnect.png" alt="" /></p>
+<p><img src="/blog/assets/ClioConnect.png" alt="" /></p>
 
 <p>Click OK and you will be taken back to Google with the access Token filled in for you:</p>
 
-<p><img src="blog/assets/connected.png" alt="" /></p>
+<p><img src="/blog/assets/connected.png" alt="" /></p>
 
 <p>Now you are ready to go and we can move on to step 3 which allows us to configure a request to the API</p>
 
@@ -103,12 +108,9 @@
 
 <p>If we have done everything right we get back:</p>
 
-<p><img src="blog/assets/Me.png" alt="" /></p>
+<p><img src="/blog/assets/Me.png" alt="" /></p>
 
-<pre><code>&#x000A;{"account":{"id":"8DTsvjEvjIfpufuz/vefRw","owner":{"id":343991381,"name":"Tom Brooke",&#x000A;   "url":"/api/v1/users/343991381"}, "name":"Law Office of Tom Brooke",&#x000A;   "maildrop_address":"643fedb36@maildrop.goclio.com","created_at":"2011-03-14T20:15:50+00:00",&#x000A;   "updated_at":"2012-11-15T00:07:53+00:00"},"user":{"id":343991381,"email":"tom.brooke@gmail.com",&#x000A;   "first_name":"Tom","last_name":"Brooke","time_zone":"Eastern Time (US & Canada)",&#x000A;   "enabled":true,"subscription_plan":"Attorney","created_at":"2011-03-14T20:15:51+00:00",&#x000A;   "updated_at":"2011-10-06T04:53:43+00:00"}}</pre>
-
-
-<p></code></p>
+<p><code>javascript&#x000A;{"account":{"id":"8DTsvjEvjIfpufuz/vefRw","owner":{"id":343991381,"name":"Tom Brooke",&#x000A;   "url":"/api/v1/users/343991381"}, "name":"Law Office of Tom Brooke",&#x000A;   "maildrop_address":"643fedb36@maildrop.goclio.com","created_at":"2011-03-14T20:15:50+00:00",&#x000A;   "updated_at":"2012-11-15T00:07:53+00:00"},"user":{"id":343991381,"email":"tom.brooke@gmail.com",&#x000A;   "first_name":"Tom","last_name":"Brooke","time_zone":"Eastern Time (US &amp; Canada)",&#x000A;   "enabled":true,"subscription_plan":"Attorney","created_at":"2011-03-14T20:15:51+00:00",&#x000A;   "updated_at":"2011-10-06T04:53:43+00:00"}}</code></p>
 
 <p>That's me - How cool is that !!</p>
 
