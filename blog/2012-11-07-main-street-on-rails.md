@@ -2,7 +2,7 @@
 title: "Main Street Mission on Rails"
 author: 'Tom Brooke'
 layout: blog
-tags:  [ Rails ]
+tags:  [ Rails,MSM,Mendicant ]
 ---
 
 <img width="386" height="325" alt="Main Street Mission" id="image18" src="/blog/assets/MainStreet-logo.jpg"/>

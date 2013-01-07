@@ -2,7 +2,7 @@
 title: "Learning OAuth 2"
 author: 'Tom Brooke'
 layout: blog
-tags:  [ Oauth ]
+tags:  [ Oauth, Clio ]
 ---
 
 
@@ -44,7 +44,7 @@ Token endpoint: https://app.goclio.com/oauth/token
 
 Access Token location: Authorization header w/ Bearer prefix
 
-![](blog/assets/setup.png)
+![](/blog/assets/setup.png)
 
 Now put in the OAuth Client ID and Client Secret that you received from Clio  
 
@@ -58,11 +58,11 @@ https://app.goclio.com/oauth/approval
 
 now click on the Authorize APIs button and viola you're at Clio
 
-![](blog/assets/ClioConnect.png)
+![](/blog/assets/ClioConnect.png)
 
 Click OK and you will be taken back to Google with the access Token filled in for you:
 
-![](blog/assets/connected.png)
+![](/blog/assets/connected.png)
 
 Now you are ready to go and we can move on to step 3 which allows us to configure a request to the API 
 
@@ -75,9 +75,9 @@ https://app.goclio.com//api/v1/users/who_am_i
 
 If we have done everything right we get back:
 
-![](blog/assets/Me.png)
+![](/blog/assets/Me.png)
 
-<pre><code>
+```javascript
 {"account":{"id":"8DTsvjEvjIfpufuz/vefRw","owner":{"id":343991381,"name":"Tom Brooke",
    "url":"/api/v1/users/343991381"}, "name":"Law Office of Tom Brooke",
    "maildrop_address":"643fedb36@maildrop.goclio.com","created_at":"2011-03-14T20:15:50+00:00",
@@ -85,8 +85,7 @@ If we have done everything right we get back:
    "first_name":"Tom","last_name":"Brooke","time_zone":"Eastern Time (US & Canada)",
    "enabled":true,"subscription_plan":"Attorney","created_at":"2011-03-14T20:15:51+00:00",
    "updated_at":"2011-10-06T04:53:43+00:00"}}
-</pre></code>
-
+```
 
 That's me - How cool is that !! 
 

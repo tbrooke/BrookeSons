@@ -2,7 +2,7 @@
 title: "Clojure Day Report"
 author: 'Tom Brooke'
 layout: blog
-tags:  [ clojure ]
+tags:  [ clojure,Mendicant]
 ---
 
 Gregory Brown is well know in the Ruby Community and Mendicant University has spawned many Ruby developers. Recently he decided to step out of Ruby and take a look at Clojure. The result was Clojure Day and a summary follows:
