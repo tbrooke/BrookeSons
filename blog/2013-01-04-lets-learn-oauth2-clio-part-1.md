@@ -51,7 +51,7 @@ Now put in the OAuth Client ID and Client Secret that you received from Clio
 
 You are now set up and ready to move on to Step 2 where you set up and authorize the API. The way the authorization works is that you present your credentials, which we have just set up with the Client ID and Client Secret, to Clio and if everything is in order Clio issues an access token. This is sent back and by using that token you have access to Clio. The token is the key that allows your Web Application to log into Clio.
 
-Lets go over to the left hand side of the screen and beside the Authorize APIs button put in:
+Now lets go over to the left hand side of the screen and beside the Authorize APIs button put in:
 
 https://app.goclio.com/oauth/approval
 
