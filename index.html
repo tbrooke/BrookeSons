@@ -79,7 +79,7 @@
 
 <p>Now put in the OAuth Client ID and Client Secret that you received from Clio</p>
 
-<p>You are now set up and ready to move on to Step 2 where you set up and authorize the API. The way the authorization works is that you present your credentials, which we have just set up with the Client ID and Client Secret, to Clio and if everything is in order Clio issues an access token. This is sent back and by using that token you have access to Clio. The token is limited in that it can only be used by your Web Application to log into Clio and it is only good for 10 minutes.</p>
+<p>You are now set up and ready to move on to Step 2 where you set up and authorize the API. The way the authorization works is that you present your credentials, which we have just set up with the Client ID and Client Secret, to Clio and if everything is in order Clio issues an access token. This is sent back and by using that token you have access to Clio. The token is your key to Clio.</p>
 
 <p>Lets go over to the left hand side of the screen and beside the Authorize APIs button put in:</p>
 
@@ -95,7 +95,7 @@
 
 <p>Now you are ready to go and we can move on to step 3 which allows us to configure a request to the API</p>
 
-<p>under HTTP Method Add Headers (in the little box above the request space) put in Host and for the header value put in:  app.goclio.com</p>
+<p>Open the Step 3 area and you will see a discussion about constructing your http header. The http: method is a GET so we can leave that alone. Click on the box under HTTP Method Add Headers (in the little box above the request space) and it will open put in Host and for the header value put in:  app.goclio.com</p>
 
 <p>Now we are ready to put in our RESTful request - We are performing a simple GET request which we can select in the selection window and let's start with something simple like Who am I</p>
 
