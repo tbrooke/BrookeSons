@@ -75,7 +75,9 @@ Clio is...
 
 &lt;p&gt;Now you are ready to go and we can move on to step 3 which allows us to configure a request to the API&lt;/p&gt;
 
-&lt;p&gt;under HTTP Method Add Headers (in the little box above the request space) put in Host and for the header value put in:  app.goclio.com&lt;/p&gt;
+&lt;p&gt;Open step 3 go to the line HTTP Method and then open the right hand box labeled Add Headers:&lt;/p&gt;
+
+&lt;p&gt;inside the HTTP Method Add Headers (in the little box above the request space) put in Host and for the header value put in:  app.goclio.com&lt;/p&gt;
 
 &lt;p&gt;Now we are ready to put in our RESTful request - We are performing a simple GET request which we can select in the selection window and let's start with something simple like Who am I&lt;/p&gt;
 
